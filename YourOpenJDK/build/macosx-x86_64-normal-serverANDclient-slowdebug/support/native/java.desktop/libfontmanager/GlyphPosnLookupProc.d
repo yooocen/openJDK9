@@ -1,0 +1,29 @@
+../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libfontmanager/GlyphPosnLookupProc.o: \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPosnLookupProc.cpp \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETypes.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEStandalone.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEFontInstance.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/OpenTypeTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETableReference.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ICUFeatures.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/Lookups.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ScriptAndLanguage.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ClassDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPositioningTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphLookupTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/SinglePositioningSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ValueRecords.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphIterator.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/PairPositioningSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/CursiveAttachmentSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/MarkToBasePosnSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/AttachmentPosnSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/MarkToLigaturePosnSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/MarkToMarkPosnSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ContextualSubstSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphSubstitutionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LookupProcessor.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ExtensionSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPosnLookupProc.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LESwaps.h

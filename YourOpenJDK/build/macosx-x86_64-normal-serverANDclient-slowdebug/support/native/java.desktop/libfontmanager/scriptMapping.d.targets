@@ -1,0 +1,14 @@
+../jdk/src/java.desktop/share/native/libfontmanager/scriptMapping.c :
+../jdk/src/java.desktop/share/native/libfontmanager/scriptMapping.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-blob.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-common.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-buffer.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-unicode.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-font.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-face.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-deprecated.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-set.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-shape.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-shape-plan.h :
+../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-version.h :

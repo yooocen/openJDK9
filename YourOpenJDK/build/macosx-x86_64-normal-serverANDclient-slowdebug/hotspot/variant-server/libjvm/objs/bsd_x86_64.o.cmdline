@@ -1,0 +1,1 @@
+/usr/bin/clang -c -m64 -x assembler-with-cpp -mno-omit-leaf-frame-pointer -mstack-alignment=16 -o /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-server/libjvm/objs/bsd_x86_64.o /Users/chenyongda/YourOpenJDK/hotspot/src/os_cpu/bsd_x86/vm/bsd_x86_64.s

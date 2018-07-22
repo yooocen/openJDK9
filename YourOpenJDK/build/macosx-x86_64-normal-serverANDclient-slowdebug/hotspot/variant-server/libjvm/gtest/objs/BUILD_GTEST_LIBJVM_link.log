@@ -1,0 +1,1 @@
+clang: warning: libstdc++ is deprecated; move to libc++ [-Wdeprecated]

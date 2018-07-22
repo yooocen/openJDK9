@@ -1,0 +1,1 @@
+/usr/sbin/dtrace -h -o /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-server/gensrc/dtracefiles/hotspot.h -s /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-server/support/dtrace/hotspot.h.d

@@ -1,0 +1,1 @@
+( CCACHE_COMPRESS=1 CCACHE_SLOPPINESS=pch_defines,time_macros CCACHE_BASEDIR=/Users/chenyongda/YourOpenJDK /usr/local/bin/ccache /usr/bin/clang -E -D_LP64 -x c /Users/chenyongda/YourOpenJDK/hotspot/src/os/posix/dtrace/hotspot_jni.d > /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-client/support/dtrace/hotspot_jni.h.d )

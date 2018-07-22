@@ -1,0 +1,10 @@
+../jdk/src/java.desktop/share/native/libsplashscreen/libpng/pngrutil.c:453:16: warning: 'inflateValidate' is only available on macOS 10.13 or newer [-Wunguarded-availability-new]
+         ret = inflateValidate(&png_ptr->zstream, 0);
+               ^~~~~~~~~~~~~~~
+/usr/include/zlib.h:1917:32: note: 'inflateValidate' has been explicitly marked partial here
+ZEXTERN int            ZEXPORT inflateValidate OF((z_streamp, int))
+                               ^
+../jdk/src/java.desktop/share/native/libsplashscreen/libpng/pngrutil.c:453:16: note: enclose 'inflateValidate' in a __builtin_available check to silence this warning
+         ret = inflateValidate(&png_ptr->zstream, 0);
+               ^~~~~~~~~~~~~~~
+1 warning generated.

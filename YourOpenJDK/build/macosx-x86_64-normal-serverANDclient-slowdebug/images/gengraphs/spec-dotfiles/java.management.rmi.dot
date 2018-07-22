@@ -1,0 +1,20 @@
+digraph "java.management.rmi" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.management"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.management" [fontcolor="#e76f00", group=java];
+  "java.management.rmi" [fontcolor="#e76f00", group=java];
+  "java.rmi" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  }
+  "java.management" -> "java.base" [color="#dddddd", weight=10];
+  "java.management.rmi" -> "java.rmi" [weight=10];
+  "java.management.rmi" -> "java.management" [weight=10];
+  "java.rmi" -> "java.base" [color="#dddddd", weight=10];
+}

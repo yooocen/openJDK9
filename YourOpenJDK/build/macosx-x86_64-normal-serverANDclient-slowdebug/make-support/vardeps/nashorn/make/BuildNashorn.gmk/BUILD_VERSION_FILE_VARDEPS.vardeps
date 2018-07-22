@@ -1,0 +1,1 @@
+BUILD_VERSION_FILE_VARDEPS_old:=/bin/cat /usr/bin/sed -e 's/@@VERSION_STRING@@/9-internal+0-adhoc.chenyongda.YourOpenJDK/' -e 's/@@VERSION_SHORT@@/9-internal/'

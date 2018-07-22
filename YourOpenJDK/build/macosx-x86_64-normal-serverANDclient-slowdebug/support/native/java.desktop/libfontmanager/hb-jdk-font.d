@@ -1,0 +1,19 @@
+../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libfontmanager/hb-jdk-font.o: \
+  ../jdk/src/java.desktop/share/native/libfontmanager/hb-jdk-font.cc \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-blob.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-common.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-buffer.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-unicode.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-font.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-face.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-deprecated.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-set.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-shape.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-shape-plan.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-version.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/hb-jdk.h \
+  ../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/modules_include/java.base/jni.h \
+  ../jdk/src/java.base/macosx/native/include/jni_md.h \
+  ../jdk/src/java.desktop/share/native/common/font/sunfontids.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/harfbuzz/hb-coretext.h

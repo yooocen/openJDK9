@@ -1,0 +1,1 @@
+/usr/sbin/dtrace -h -o /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-client/gensrc/dtracefiles/hs_private.h -s /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-client/support/dtrace/hs_private.h.d

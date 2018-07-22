@@ -1,0 +1,24 @@
+digraph "jdk.jlink" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.compiler"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.compiler" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  "jdk.compiler" [fontcolor="#437291", group=jdk];
+  "jdk.internal.opt" [fontcolor="#437291", group=jdk];
+  "jdk.jdeps" [fontcolor="#437291", group=jdk];
+  "jdk.jlink" [fontcolor="#437291", group=jdk];
+  }
+  "java.compiler" -> "java.base" [color="#dddddd", weight=10];
+  "jdk.compiler" -> "java.compiler" [];
+  "jdk.internal.opt" -> "java.base" [color="#dddddd"];
+  "jdk.jdeps" -> "jdk.compiler" [style="dashed"];
+  "jdk.jlink" -> "jdk.jdeps" [style="dashed"];
+  "jdk.jlink" -> "jdk.internal.opt" [style="dashed"];
+}

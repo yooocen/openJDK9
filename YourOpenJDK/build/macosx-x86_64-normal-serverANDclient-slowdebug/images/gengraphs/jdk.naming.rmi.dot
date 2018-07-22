@@ -1,0 +1,24 @@
+digraph "jdk.naming.rmi" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.logging"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.logging" [fontcolor="#e76f00", group=java];
+  "java.naming" [fontcolor="#e76f00", group=java];
+  "java.rmi" [fontcolor="#e76f00", group=java];
+  "java.security.sasl" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  "jdk.naming.rmi" [fontcolor="#437291", group=jdk];
+  }
+  "java.logging" -> "java.base" [color="#dddddd", weight=10];
+  "java.naming" -> "java.security.sasl" [style="dashed", weight=10];
+  "java.rmi" -> "java.logging" [style="dashed", weight=10];
+  "java.security.sasl" -> "java.logging" [style="dashed", weight=10];
+  "jdk.naming.rmi" -> "java.rmi" [style="dashed"];
+  "jdk.naming.rmi" -> "java.naming" [style="dashed"];
+}

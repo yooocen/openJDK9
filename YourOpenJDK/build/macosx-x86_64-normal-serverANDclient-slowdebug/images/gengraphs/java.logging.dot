@@ -1,0 +1,15 @@
+digraph "java.logging" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.logging"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.logging" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  }
+  "java.logging" -> "java.base" [color="#dddddd", weight=10];
+}

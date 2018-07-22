@@ -1,0 +1,20 @@
+In file included from ../src/share/vm/classfile/symbolTable.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:30:
+In file included from ../src/share/vm/asm/assembler.inline.hpp:30:
+In file included from /Users/chenyongda/YourOpenJDK/hotspot/make/../src/cpu/x86/vm/assembler_x86.inline.hpp:30:
+In file included from ../src/share/vm/code/codeCache.hpp:28:
+In file included from ../src/share/vm/code/codeBlob.hpp:31:
+In file included from ../src/share/vm/runtime/frame.hpp:28:
+In file included from ../src/share/vm/oops/method.hpp:28:
+In file included from ../src/share/vm/classfile/vmSymbols.hpp:28:
+In file included from ../src/share/vm/classfile/moduleEntry.hpp:35:
+../src/share/vm/utilities/hashtable.hpp:336:50: warning: instantiation of variable 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::_seed' required here, but no definition is available [-Wundefined-var-template]
+  static bool use_alternate_hashcode()  { return _seed != 0; }
+                                                 ^
+../src/share/vm/classfile/symbolTable.cpp:110:34: note: in instantiation of member function 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::use_alternate_hashcode' requested here
+      if (entry->is_shared() && !use_alternate_hashcode()) {
+                                 ^
+../src/share/vm/utilities/hashtable.hpp:352:16: note: forward declaration of template entity is here
+  static juint _seed;
+               ^
+1 warning generated.

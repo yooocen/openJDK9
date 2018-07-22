@@ -1,0 +1,17 @@
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/DirectAudioDevice.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/DirectAudioDeviceProvider.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/MidiInDevice.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/MidiInDeviceProvider.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/MidiOutDevice.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/MidiOutDeviceProvider.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_MidiIn.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_MidiOut.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_MidiUtils.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_PCM.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_Ports.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PLATFORM_API_MacOSX_Utils.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/Platform.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PlatformMidi.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PortMixer.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/PortMixerProvider.o
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libjsound/Utilities.o

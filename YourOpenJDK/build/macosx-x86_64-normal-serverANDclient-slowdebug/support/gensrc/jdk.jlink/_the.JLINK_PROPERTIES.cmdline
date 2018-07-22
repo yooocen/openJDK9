@@ -1,0 +1,16 @@
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jlink/share/classes/jdk/tools/jlink/resources/jlink.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jlink/jdk/tools/jlink/resources/jlink.java
+ListResourceBundle
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jlink/share/classes/jdk/tools/jlink/resources/jlink_zh_CN.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jlink/jdk/tools/jlink/resources/jlink_zh_CN.java
+ListResourceBundle
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jlink/share/classes/jdk/tools/jlink/resources/plugins.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jlink/jdk/tools/jlink/resources/plugins.java
+ListResourceBundle
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jlink/share/classes/jdk/tools/jlink/resources/jlink_ja.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jlink/jdk/tools/jlink/resources/jlink_ja.java
+ListResourceBundle

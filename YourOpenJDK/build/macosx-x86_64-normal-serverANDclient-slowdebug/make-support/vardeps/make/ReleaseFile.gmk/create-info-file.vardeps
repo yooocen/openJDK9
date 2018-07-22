@@ -1,0 +1,1 @@
+create-info-file_old:=/usr/bin/printf '%s="%s"\n' "SOURCE" "" >> /usr/bin/printf '%s="%s"\n' "IMPLEMENTOR" "N/A" >> /usr/bin/printf '%s="%s"\n' "OS_NAME" "Darwin" >> /usr/bin/printf '%s="%s"\n' "OS_ARCH" "x86_64" >>

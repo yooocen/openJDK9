@@ -1,0 +1,50 @@
+digraph "jdk.jconsole" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.logging","java.xml"}
+  {rank=same "java.desktop","java.management"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.datatransfer" [fontcolor="#e76f00", group=java];
+  "java.desktop" [fontcolor="#e76f00", group=java];
+  "java.logging" [fontcolor="#e76f00", group=java];
+  "java.management" [fontcolor="#e76f00", group=java];
+  "java.management.rmi" [fontcolor="#e76f00", group=java];
+  "java.naming" [fontcolor="#e76f00", group=java];
+  "java.prefs" [fontcolor="#e76f00", group=java];
+  "java.rmi" [fontcolor="#e76f00", group=java];
+  "java.security.sasl" [fontcolor="#e76f00", group=java];
+  "java.xml" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  "jdk.attach" [fontcolor="#437291", group=jdk];
+  "jdk.internal.jvmstat" [fontcolor="#437291", group=jdk];
+  "jdk.jconsole" [fontcolor="#437291", group=jdk];
+  "jdk.management" [fontcolor="#437291", group=jdk];
+  "jdk.management.agent" [fontcolor="#437291", group=jdk];
+  }
+  "java.datatransfer" -> "java.base" [color="#dddddd", weight=10];
+  "java.desktop" -> "java.prefs" [style="dashed", weight=10];
+  "java.desktop" -> "java.datatransfer" [weight=10];
+  "java.logging" -> "java.base" [color="#dddddd", weight=10];
+  "java.management" -> "java.base" [color="#dddddd", weight=10];
+  "java.management.rmi" -> "java.rmi" [weight=10];
+  "java.management.rmi" -> "java.naming" [style="dashed", weight=10];
+  "java.management.rmi" -> "java.management" [weight=10];
+  "java.naming" -> "java.security.sasl" [style="dashed", weight=10];
+  "java.prefs" -> "java.xml" [style="dashed", weight=10];
+  "java.rmi" -> "java.logging" [style="dashed", weight=10];
+  "java.security.sasl" -> "java.logging" [style="dashed", weight=10];
+  "java.xml" -> "java.base" [color="#dddddd", weight=10000];
+  "jdk.attach" -> "jdk.internal.jvmstat" [style="dashed"];
+  "jdk.internal.jvmstat" -> "java.base" [color="#dddddd"];
+  "jdk.jconsole" -> "jdk.management" [style="dashed"];
+  "jdk.jconsole" -> "jdk.management.agent" [style="dashed"];
+  "jdk.jconsole" -> "java.desktop" [];
+  "jdk.jconsole" -> "jdk.attach" [style="dashed"];
+  "jdk.management" -> "java.management" [];
+  "jdk.management.agent" -> "java.management.rmi" [style="dashed"];
+}

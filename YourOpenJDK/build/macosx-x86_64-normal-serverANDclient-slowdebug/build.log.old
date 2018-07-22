@@ -1,0 +1,864 @@
+Building target 'all' in configuration 'macosx-x86_64-normal-serverANDclient-slowdebug'
+Creating support/modules_libs/java.base/client/libjvm.dylib from 1 file(s)
+Creating support/modules_libs/java.base/server/libjvm.dylib from 1 file(s)
+Compiling 14 files for jdk.zipfs
+Compiling 17 files for java.prefs
+Compiling 78 files for java.sql
+Compiling 283 files for java.xml.crypto
+Compiling 15 files for jdk.attach
+Compiling 67 files for jdk.crypto.cryptoki
+Compiling 38 files for jdk.jcmd
+Compiling 250 files for jdk.jdi
+Warning: generation and use of skeletons and static stubs for JRMP
+is deprecated. Skeletons are unnecessary, and static stubs have
+been superseded by dynamically generated stubs. Users are
+encouraged to migrate away from using rmic to generate skeletons and static
+stubs. See the documentation for java.rmi.server.UnicastRemoteObject.
+../src/share/vm/logging/logConfiguration.cpp:302:16: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(ap, exact_match);
+               ^
+../src/share/vm/logging/logConfiguration.cpp:298:66: note: parameter of type 'bool' is declared here
+void LogConfiguration::configure_stdout(LogLevelType level, bool exact_match, ...) {
+                                                                 ^
+1 warning generated.
+Compiling 25 files for java.activation
+Compiling 193 files for java.naming
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 4 files for java.transaction
+Compiling 94 files for jdk.jshell
+Compiling 2834 files for java.desktop
+Compiling 15 files for jdk.naming.dns
+Compiling 7 files for jdk.naming.rmi
+Compiling 14 files for java.management.rmi
+Compiling 211 files for java.security.jgss
+Compiling 51 files for java.sql.rowset
+Compiling 31 files for jdk.management.agent
+../src/share/vm/logging/logConfiguration.cpp:302:16: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(ap, exact_match);
+               ^
+../src/share/vm/logging/logConfiguration.cpp:298:66: note: parameter of type 'bool' is declared here
+void LogConfiguration::configure_stdout(LogLevelType level, bool exact_match, ...) {
+                                                                 ^
+1 warning generated.
+Compiling 16 files for jdk.security.jgss
+Compiling 37 files for jdk.security.auth
+Warning: generation and use of skeletons and static stubs for JRMP
+is deprecated. Skeletons are unnecessary, and static stubs have
+been superseded by dynamically generated stubs. Users are
+encouraged to migrate away from using rmic to generate skeletons and static
+stubs. See the documentation for java.rmi.server.UnicastRemoteObject.
+Warning: generation and use of skeletons and static stubs for JRMP
+is deprecated. Skeletons are unnecessary, and static stubs have
+been superseded by dynamically generated stubs. Users are
+encouraged to migrate away from using rmic to generate skeletons and static
+stubs. See the documentation for java.rmi.server.UnicastRemoteObject.
+In file included from ../src/share/vm/memory/metaspace.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:296:
+In file included from ../src/share/vm/gc/cms/compactibleFreeListSpace.hpp:33:
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metachunk, FreeList<Metachunk> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:293:44: note: in instantiation of member function 'TreeChunk<Metachunk, FreeList<Metachunk> >::min_size' requested here
+    return TreeChunk<Chunk_t, FreeList_t>::min_size();
+                                           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:242:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::min_size' requested here
+  BinaryTreeDictionary() :
+  ^
+../src/share/vm/memory/metaspace.cpp:145:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::BinaryTreeDictionary' requested here
+  ChunkManager(size_t specialized_size, size_t small_size, size_t medium_size)
+  ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metablock, FreeList<Metablock> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/metaspace.cpp:342:94: note: in instantiation of member function 'TreeChunk<Metablock, FreeList<Metablock> >::min_size' requested here
+  static size_t min_dictionary_size()   { return TreeChunk<Metablock, FreeList<Metablock> >::min_size(); }
+                                                                                             ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+2 warnings generated.
+Updating support/src.zip
+Generating JDK_API javadoc for 64 modules
+Compiling 1481 files for java.corba
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些输入文件使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 1 files for java.se
+Compiling 760 files for java.xml.bind
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jaxws/src/java.xml.bind/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 18 files for jdk.accessibility
+Compiling 3 files for jdk.editpad
+Compiling 985 files for jdk.hotspot.agent
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 64 files for jdk.jconsole
+In file included from ../src/share/vm/memory/metaspace.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:296:
+In file included from ../src/share/vm/gc/cms/compactibleFreeListSpace.hpp:33:
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metachunk, FreeList<Metachunk> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:293:44: note: in instantiation of member function 'TreeChunk<Metachunk, FreeList<Metachunk> >::min_size' requested here
+    return TreeChunk<Chunk_t, FreeList_t>::min_size();
+                                           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:242:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::min_size' requested here
+  BinaryTreeDictionary() :
+  ^
+../src/share/vm/memory/metaspace.cpp:145:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::BinaryTreeDictionary' requested here
+  ChunkManager(size_t specialized_size, size_t small_size, size_t medium_size)
+  ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metablock, FreeList<Metablock> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/metaspace.cpp:342:94: note: in instantiation of member function 'TreeChunk<Metablock, FreeList<Metablock> >::min_size' requested here
+  static size_t min_dictionary_size()   { return TreeChunk<Metablock, FreeList<Metablock> >::min_size(); }
+                                                                                             ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+2 warnings generated.
+Compiling 5 files for jdk.jsobject
+Compiling 14 files for jdk.policytool
+Compiling 227 files for jdk.rmic
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/jdk.rmic/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 10 files for jdk.scripting.nashorn.shell
+Compiling 791 files for jdk.xml.bind
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jaxws/src/jdk.xml.bind/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 1241 files for java.xml.ws
+/Users/chenyongda/YourOpenJDK/jaxws/src/java.xml.ws/share/classes/com/sun/xml/internal/messaging/saaj/packaging/mime/internet/MimeBodyPart.java:1097: 警告: /Users/chenyongda/YourOpenJDK/jaxws/src/java.xml.ws/share/classes/com/sun/xml/internal/messaging/saaj/packaging/mime/internet/InternetHeaders.java 中的辅助类hdr不应从其自身的源文件以外访问
+    public FinalArrayList<hdr> getAllHeaders() {
+                          ^
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jaxws/src/java.xml.ws/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+1 个警告
+Compiling 1 files for java.se.ee
+Compiling 236 files for jdk.xml.ws
+In file included from ../src/share/vm/classfile/stringTable.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:30:
+In file included from ../src/share/vm/asm/assembler.inline.hpp:30:
+In file included from /Users/chenyongda/YourOpenJDK/hotspot/make/../src/cpu/x86/vm/assembler_x86.inline.hpp:30:
+In file included from ../src/share/vm/code/codeCache.hpp:28:
+In file included from ../src/share/vm/code/codeBlob.hpp:31:
+In file included from ../src/share/vm/runtime/frame.hpp:28:
+In file included from ../src/share/vm/oops/method.hpp:28:
+In file included from ../src/share/vm/classfile/vmSymbols.hpp:28:
+In file included from ../src/share/vm/classfile/moduleEntry.hpp:35:
+../src/share/vm/utilities/hashtable.hpp:336:50: warning: instantiation of variable 'RehashableHashtable<oopDesc *, MemoryType::mtSymbol>::_seed' required here, but no definition is available [-Wundefined-var-template]
+  static bool use_alternate_hashcode()  { return _seed != 0; }
+                                                 ^
+../src/share/vm/classfile/stringTable.cpp:99:10: note: in instantiation of member function 'RehashableHashtable<oopDesc *, MemoryType::mtSymbol>::use_alternate_hashcode' requested here
+  return use_alternate_hashcode() ? alt_hash_string(s, len) :
+         ^
+../src/share/vm/utilities/hashtable.hpp:352:16: note: forward declaration of template entity is here
+  static juint _seed;
+               ^
+1 warning generated.
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jaxws/src/jdk.xml.ws/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+In file included from ../src/share/vm/classfile/symbolTable.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:30:
+In file included from ../src/share/vm/asm/assembler.inline.hpp:30:
+In file included from /Users/chenyongda/YourOpenJDK/hotspot/make/../src/cpu/x86/vm/assembler_x86.inline.hpp:30:
+In file included from ../src/share/vm/code/codeCache.hpp:28:
+In file included from ../src/share/vm/code/codeBlob.hpp:31:
+In file included from ../src/share/vm/runtime/frame.hpp:28:
+In file included from ../src/share/vm/oops/method.hpp:28:
+In file included from ../src/share/vm/classfile/vmSymbols.hpp:28:
+In file included from ../src/share/vm/classfile/moduleEntry.hpp:35:
+../src/share/vm/utilities/hashtable.hpp:336:50: warning: instantiation of variable 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::_seed' required here, but no definition is available [-Wundefined-var-template]
+  static bool use_alternate_hashcode()  { return _seed != 0; }
+                                                 ^
+../src/share/vm/classfile/symbolTable.cpp:110:34: note: in instantiation of member function 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::use_alternate_hashcode' requested here
+      if (entry->is_shared() && !use_alternate_hashcode()) {
+                                 ^
+../src/share/vm/utilities/hashtable.hpp:352:16: note: forward declaration of template entity is here
+  static juint _seed;
+               ^
+1 warning generated.
+clang: warning: libstdc++ is deprecated; move to libc++ [-Wdeprecated]
+clang: warning: libstdc++ is deprecated; move to libc++ [-Wdeprecated]
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+In file included from ../src/share/vm/classfile/stringTable.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:30:
+In file included from ../src/share/vm/asm/assembler.inline.hpp:30:
+In file included from /Users/chenyongda/YourOpenJDK/hotspot/make/../src/cpu/x86/vm/assembler_x86.inline.hpp:30:
+In file included from ../src/share/vm/code/codeCache.hpp:28:
+In file included from ../src/share/vm/code/codeBlob.hpp:31:
+In file included from ../src/share/vm/runtime/frame.hpp:28:
+In file included from ../src/share/vm/oops/method.hpp:28:
+In file included from ../src/share/vm/classfile/vmSymbols.hpp:28:
+In file included from ../src/share/vm/classfile/moduleEntry.hpp:35:
+../src/share/vm/utilities/hashtable.hpp:336:50: warning: instantiation of variable 'RehashableHashtable<oopDesc *, MemoryType::mtSymbol>::_seed' required here, but no definition is available [-Wundefined-var-template]
+  static bool use_alternate_hashcode()  { return _seed != 0; }
+                                                 ^
+../src/share/vm/classfile/stringTable.cpp:99:10: note: in instantiation of member function 'RehashableHashtable<oopDesc *, MemoryType::mtSymbol>::use_alternate_hashcode' requested here
+  return use_alternate_hashcode() ? alt_hash_string(s, len) :
+         ^
+../src/share/vm/utilities/hashtable.hpp:352:16: note: forward declaration of template entity is here
+  static juint _seed;
+               ^
+1 warning generated.
+In file included from ../src/share/vm/classfile/symbolTable.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:30:
+In file included from ../src/share/vm/asm/assembler.inline.hpp:30:
+In file included from /Users/chenyongda/YourOpenJDK/hotspot/make/../src/cpu/x86/vm/assembler_x86.inline.hpp:30:
+In file included from ../src/share/vm/code/codeCache.hpp:28:
+In file included from ../src/share/vm/code/codeBlob.hpp:31:
+In file included from ../src/share/vm/runtime/frame.hpp:28:
+In file included from ../src/share/vm/oops/method.hpp:28:
+In file included from ../src/share/vm/classfile/vmSymbols.hpp:28:
+In file included from ../src/share/vm/classfile/moduleEntry.hpp:35:
+../src/share/vm/utilities/hashtable.hpp:336:50: warning: instantiation of variable 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::_seed' required here, but no definition is available [-Wundefined-var-template]
+  static bool use_alternate_hashcode()  { return _seed != 0; }
+                                                 ^
+../src/share/vm/classfile/symbolTable.cpp:110:34: note: in instantiation of member function 'RehashableHashtable<Symbol *, MemoryType::mtSymbol>::use_alternate_hashcode' requested here
+      if (entry->is_shared() && !use_alternate_hashcode()) {
+                                 ^
+../src/share/vm/utilities/hashtable.hpp:352:16: note: forward declaration of template entity is here
+  static juint _seed;
+               ^
+1 warning generated.
+clang: warning: libstdc++ is deprecated; move to libc++ [-Wdeprecated]
+clang: warning: libstdc++ is deprecated; move to libc++ [-Wdeprecated]
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+Creating support/modules_libs/java.base/libverify.dylib from 2 file(s)
+Creating support/modules_libs/java.base/libjava.dylib from 62 file(s)
+Creating support/native/java.base/libfdlibm/libfdlibm.dylib from 57 file(s)
+Creating support/modules_libs/java.base/libzip.dylib from 5 file(s)
+Creating support/modules_libs/java.base/libjimage.dylib from 6 file(s)
+Creating support/modules_libs/java.base/jli/libjli.dylib from 8 file(s)
+Creating support/native/java.base/libjli_static.dylib from 8 file(s)
+Creating support/modules_libs/java.base/libnet.dylib from 22 file(s)
+Creating support/modules_libs/java.base/libnio.dylib from 25 file(s)
+Creating support/modules_libs/java.base/libosxsecurity.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libJniVersion.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libUninitializedStrings.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libDefaultMethods.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libTestCheckedJniExceptionCheck.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libPrivateInterfaceMethods.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libToStringTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libCallWithJNIWeak.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libReturnJNIWeak.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libGetModule.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libSameObject.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libNativeSmallIntCalls.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libTestFloatJNIArgs.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libTestDirtyInt.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libCallsNative.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libGetNamedModuleTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libIsModifiableModuleTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libAddModuleReadsTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libAddModuleExportsAndOpensTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libAddModuleUsesAndProvidesTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libSimpleClassFileLoadHook.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libNativeCallTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libJvmtiGetAllModulesTest.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libMAAClassFileLoadHook.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libMAAClassLoadPrepare.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/lib/libMAAThreadStart.dylib from 1 file(s)
+Creating support/test/hotspot/jtreg/native/bin/FPRegs from 1 file(s)
+../jdk/src/java.base/macosx/native/libjli/java_md_macosx.c:294:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+../jdk/src/java.base/macosx/native/libjli/java_md_macosx.c:928:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+2 warnings generated.
+../jdk/src/java.base/macosx/native/libjli/java_md_macosx.c:294:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+../jdk/src/java.base/macosx/native/libjli/java_md_macosx.c:928:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+2 warnings generated.
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base//libfdlibm.a) was built for newer OSX version (10.13) than being linked (10.7)
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+Creating support/modules_cmds/jdk.jlink/jimage from 1 file(s)
+Creating support/native/java.base/java_objs/java from 1 file(s)
+Creating support/modules_cmds/jdk.jlink/jlink from 1 file(s)
+Creating support/modules_cmds/java.base/keytool from 1 file(s)
+Creating support/modules_cmds/jdk.jlink/jmod from 1 file(s)
+Creating support/modules_libs/java.base/jspawnhelper from 1 file(s)
+Creating support/modules_cmds/java.corba/idlj from 1 file(s)
+Creating support/modules_cmds/java.corba/orbd from 1 file(s)
+Creating support/modules_cmds/java.corba/servertool from 1 file(s)
+Creating support/modules_cmds/java.corba/tnameserv from 1 file(s)
+Creating support/modules_libs/java.desktop/libosx.dylib from 1 file(s)
+Creating support/modules_libs/java.desktop/libosxapp.dylib from 5 file(s)
+Creating support/modules_libs/java.desktop/libmlib_image.dylib from 50 file(s)
+Creating support/modules_libs/java.desktop/libawt.dylib from 71 file(s)
+Creating support/modules_libs/java.desktop/liblcms.dylib from 27 file(s)
+Creating support/modules_libs/java.desktop/libjavajpeg.dylib from 46 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.desktop/libfontmanager.dylib from 129 file(s)
+Creating support/modules_libs/java.desktop/libjawt.dylib from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.desktop/libawt_lwawt.dylib from 72 file(s)
+Creating support/modules_libs/java.desktop/libsplashscreen.dylib from 66 file(s)
+Creating support/modules_libs/java.desktop/libosxui.dylib from 7 file(s)
+Creating support/modules_libs/java.desktop/libjsound.dylib from 17 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/java.desktop/appletviewer from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.instrument/libinstrument.dylib from 12 file(s)
+Creating support/modules_libs/java.management/libmanagement.dylib from 9 file(s)
+../jdk/src/java.desktop/macosx/native/libosxapp/NSApplicationAWT.m:335:48: warning: conflicting parameter types in implementation of 'nextEventMatchingMask:untilDate:inMode:dequeue:': 'NSEventMask' (aka 'enum NSEventMask') vs 'NSUInteger' (aka 'unsigned long') [-Wmismatched-parameter-types]
+- (NSEvent *)nextEventMatchingMask:(NSUInteger)mask untilDate:(NSDate *)expiration inMode:(NSString *)mode dequeue:(BOOL)deqFlag {
+                                    ~~~~~~~~~~ ^
+/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h:282:58: note: previous definition is here
+- (nullable NSEvent *)nextEventMatchingMask:(NSEventMask)mask untilDate:(nullable NSDate *)expiration inMode:(NSRunLoopMode)mode dequeue:(BOOL)deqFlag;
+                                             ~~~~~~~~~~~ ^
+1 warning generated.
+Creating support/modules_libs/java.prefs/libprefs.dylib from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.rmi/librmi.dylib from 1 file(s)
+Creating support/modules_cmds/java.rmi/rmid from 1 file(s)
+Creating support/modules_cmds/java.rmi/rmiregistry from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/java.scripting/jrunscript from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.security.jgss/libj2gss.dylib from 3 file(s)
+Creating support/modules_libs/java.security.jgss/libosxkrb5.dylib from 2 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/java.smartcardio/libj2pcsc.dylib from 2 file(s)
+Creating support/modules_libs/jdk.attach/libattach.dylib from 1 file(s)
+Creating support/modules_cmds/jdk.compiler/javac from 1 file(s)
+Creating support/modules_cmds/jdk.compiler/javah from 1 file(s)
+Creating support/modules_cmds/jdk.compiler/serialver from 1 file(s)
+Creating support/modules_libs/jdk.crypto.cryptoki/libj2pkcs11.dylib from 14 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/jdk.crypto.ec/libsunec.dylib from 28 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/jdk.hotspot.agent/libsaproc.dylib from 5 file(s)
+Creating support/modules_cmds/jdk.hotspot.agent/jhsdb from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+../hotspot/src/jdk.hotspot.agent/macosx/native/libsaproc/MacosxDebuggerLocal.m:692:21: warning: 'ePtAttachDeprecated' is deprecated: PT_ATTACH is deprecated. See PT_ATTACHEXC [-Wdeprecated-declarations]
+  if ((res = ptrace(PT_ATTACH, pid, 0, 0)) < 0) {
+                    ^
+/usr/include/sys/ptrace.h:85:19: note: expanded from macro 'PT_ATTACH'
+#define PT_ATTACH       ePtAttachDeprecated     /* trace some running process */
+                        ^
+/usr/include/sys/ptrace.h:71:22: note: 'ePtAttachDeprecated' has been explicitly marked deprecated here
+        ePtAttachDeprecated __deprecated_enum_msg("PT_ATTACH is deprecated. See PT_ATTACHEXC") = 10
+                            ^
+/usr/include/sys/cdefs.h:186:38: note: expanded from macro '__deprecated_enum_msg'
+        #define __deprecated_enum_msg(_msg) __deprecated_msg(_msg)
+                                            ^
+/usr/include/sys/cdefs.h:180:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((deprecated(_msg)))
+                                                      ^
+1 warning generated.
+Creating support/modules_cmds/jdk.jartool/jar from 1 file(s)
+Creating support/modules_cmds/jdk.jartool/jarsigner from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.javadoc/javadoc from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.jcmd/jinfo from 1 file(s)
+Creating support/modules_cmds/jdk.jcmd/jmap from 1 file(s)
+Creating support/modules_cmds/jdk.jcmd/jps from 1 file(s)
+Creating support/modules_cmds/jdk.jcmd/jstack from 1 file(s)
+Creating support/modules_cmds/jdk.jcmd/jstat from 1 file(s)
+Creating support/modules_cmds/jdk.jcmd/jcmd from 1 file(s)
+Creating support/modules_cmds/jdk.jconsole/jconsole from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.jdeps/javap from 1 file(s)
+Creating support/modules_cmds/jdk.jdeps/jdeps from 1 file(s)
+Creating support/modules_cmds/jdk.jdeps/jdeprscan from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.jdi/jdb from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/jdk.jdwp.agent/libdt_socket.dylib from 2 file(s)
+Creating support/modules_libs/jdk.jdwp.agent/libjdwp.dylib from 42 file(s)
+Creating support/modules_cmds/jdk.jshell/jshell from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.jstatd/jstatd from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/jdk.management/libmanagement_ext.dylib from 8 file(s)
+Creating support/modules_libs/jdk.management.agent/libmanagement_agent.dylib from 1 file(s)
+Creating support/modules_libs/jdk.pack/libunpack.dylib from 7 file(s)
+Creating support/modules_cmds/jdk.pack/pack200 from 1 file(s)
+Creating support/modules_cmds/jdk.pack/unpack200 from 7 file(s)
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+Creating support/modules_cmds/jdk.policytool/policytool from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+Creating support/modules_cmds/jdk.rmic/rmic from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_cmds/jdk.scripting.nashorn.shell/jjs from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Creating support/modules_libs/jdk.security.auth/libjaas_unix.dylib from 1 file(s)
+Creating support/modules_cmds/jdk.xml.bind/schemagen from 1 file(s)
+Creating support/modules_cmds/jdk.xml.bind/xjc from 1 file(s)
+Creating support/modules_cmds/jdk.xml.ws/wsgen from 1 file(s)
+Creating support/modules_cmds/jdk.xml.ws/wsimport from 1 file(s)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+Updating images/sec-bin.zip
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+ld: warning: object file (/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.base/libjli_static.a) was built for newer OSX version (10.13) than being linked (10.7)
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:13: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+        ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                       ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:43: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                      ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:40: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                   ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:55: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                                  ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:26: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                                     ~~~~^
+15 warnings generated.
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:13: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+        ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                       ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:43: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                      ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:40: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                   ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:55: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                                  ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:26: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                                     ~~~~^
+15 warnings generated.
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:13: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+        ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                       ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:43: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                      ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:40: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                   ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:55: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                                  ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:26: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                                     ~~~~^
+15 warnings generated.
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:13: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+        ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                       ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:43: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                      ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:218:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:40: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                   ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:219:55: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                                  ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:220:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:26: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdphuff.c:221:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                                     ~~~~^
+15 warnings generated.
+../jdk/src/java.desktop/share/native/libsplashscreen/libpng/pngrutil.c:453:16: warning: 'inflateValidate' is only available on macOS 10.13 or newer [-Wunguarded-availability-new]
+         ret = inflateValidate(&png_ptr->zstream, 0);
+               ^~~~~~~~~~~~~~~
+/usr/include/zlib.h:1917:32: note: 'inflateValidate' has been explicitly marked partial here
+ZEXTERN int            ZEXPORT inflateValidate OF((z_streamp, int))
+                               ^
+../jdk/src/java.desktop/share/native/libsplashscreen/libpng/pngrutil.c:453:16: note: enclose 'inflateValidate' in a __builtin_available check to silence this warning
+         ret = inflateValidate(&png_ptr->zstream, 0);
+               ^~~~~~~~~~~~~~~
+1 warning generated.
+../jdk/src/java.desktop/macosx/native/libsplashscreen/splashscreen_sys.m:397:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+1 warning generated.
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+clang: warning: libstdc++ is deprecated; move to libc++ with a minimum deployment target of OS X 10.9 [-Wdeprecated]
+Compiling 4 files for BUILD_JIGSAW_TOOLS
+Creating support/interim-jmods/java.logging.jmod
+Creating images/jmods/java.activation.jmod
+Creating images/jmods/java.compiler.jmod
+Creating support/interim-jmods/java.base.jmod
+Creating images/jmods/java.corba.jmod
+Creating images/jmods/java.datatransfer.jmod
+Creating images/jmods/java.desktop.jmod
+Creating images/jmods/java.instrument.jmod
+Creating images/jmods/java.logging.jmod
+Creating images/jmods/java.management.jmod
+Creating images/jmods/java.management.rmi.jmod
+Creating images/jmods/java.naming.jmod
+Creating images/jmods/java.prefs.jmod
+Creating images/jmods/java.rmi.jmod
+Creating images/jmods/java.scripting.jmod
+Creating images/jmods/java.se.jmod
+Creating images/jmods/java.se.ee.jmod
+Creating images/jmods/java.security.jgss.jmod
+Creating images/jmods/java.security.sasl.jmod
+Creating images/jmods/java.smartcardio.jmod
+Creating images/jmods/java.sql.jmod
+Creating images/jmods/java.sql.rowset.jmod
+Creating images/jmods/java.transaction.jmod
+Creating images/jmods/java.xml.jmod
+Creating images/jmods/java.xml.bind.jmod
+Creating images/jmods/java.xml.crypto.jmod
+Creating images/jmods/java.xml.ws.jmod
+Creating images/jmods/java.xml.ws.annotation.jmod
+Creating images/jmods/jdk.accessibility.jmod
+Creating images/jmods/jdk.attach.jmod
+Creating images/jmods/jdk.charsets.jmod
+Creating images/jmods/jdk.compiler.jmod
+Creating images/jmods/jdk.crypto.cryptoki.jmod
+Creating images/jmods/jdk.crypto.ec.jmod
+Creating images/jmods/jdk.dynalink.jmod
+Creating images/jmods/jdk.editpad.jmod
+Creating images/jmods/jdk.hotspot.agent.jmod
+Creating images/jmods/jdk.httpserver.jmod
+Creating images/jmods/jdk.incubator.httpclient.jmod
+Creating images/jmods/jdk.internal.ed.jmod
+Creating images/jmods/jdk.internal.jvmstat.jmod
+Creating images/jmods/jdk.internal.le.jmod
+Creating images/jmods/jdk.internal.opt.jmod
+Creating images/jmods/jdk.internal.vm.ci.jmod
+Creating images/jmods/jdk.jartool.jmod
+Creating images/jmods/jdk.javadoc.jmod
+Creating images/jmods/jdk.jcmd.jmod
+Creating images/jmods/jdk.jconsole.jmod
+Creating images/jmods/jdk.jdeps.jmod
+Creating images/jmods/jdk.jdi.jmod
+Creating images/jmods/jdk.jdwp.agent.jmod
+Creating images/jmods/jdk.jshell.jmod
+Creating images/jmods/jdk.jsobject.jmod
+Creating images/jmods/jdk.jstatd.jmod
+Creating images/jmods/jdk.localedata.jmod
+Creating images/jmods/jdk.management.jmod
+Creating images/jmods/jdk.management.agent.jmod
+Creating images/jmods/jdk.naming.dns.jmod
+Creating images/jmods/jdk.naming.rmi.jmod
+Creating images/jmods/jdk.net.jmod
+Creating images/jmods/jdk.pack.jmod
+Creating images/jmods/jdk.policytool.jmod
+Creating images/jmods/jdk.rmic.jmod
+Creating images/jmods/jdk.scripting.nashorn.jmod
+Creating images/jmods/jdk.scripting.nashorn.shell.jmod
+Creating images/jmods/jdk.sctp.jmod
+Creating images/jmods/jdk.security.auth.jmod
+Creating images/jmods/jdk.security.jgss.jmod
+Creating images/jmods/jdk.unsupported.jmod
+Creating images/jmods/jdk.xml.bind.jmod
+Creating images/jmods/jdk.xml.dom.jmod
+Creating images/jmods/jdk.xml.ws.jmod
+Creating images/jmods/jdk.zipfs.jmod
+Compiling 1 files for BUILD_DEMO_APPLET_ArcTest
+Creating interim jimage
+Compiling 1 files for BUILD_DEMO_APPLET_BarChart
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/ArcTest/ArcTest.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/BarChart/BarChart.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_APPLET_Blink
+Compiling 1 files for BUILD_DEMO_APPLET_CardTest
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/Blink/Blink.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_APPLET_Clock
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/CardTest/CardTest.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_APPLET_DitherTest
+Compiling 1 files for BUILD_DEMO_APPLET_DrawTest
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/Clock/Clock.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_APPLET_Fractal
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/DrawTest/DrawTest.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/DitherTest/DitherTest.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 2 files for BUILD_DEMO_APPLET_GraphicsTest
+Compiling 1 files for BUILD_DEMO_APPLET_NervousText
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/Fractal/CLSFractal.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_APPLET_SimpleGraph
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/NervousText/NervousText.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 5 files for BUILD_DEMO_APPLET_SortDemo
+Compiling 1 files for BUILD_DEMO_APPLET_SpreadSheet
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/SimpleGraph/GraphApplet.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 3 files for BUILD_DEMO_CodePointIM
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/SortDemo/SortItem.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/SpreadSheet/SpreadSheet.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Updating support/demos/image/jfc/CodePointIM/src.zip
+Compiling 2 files for BUILD_DEMO_MoleculeViewer
+Updating support/demos/image/applets/MoleculeViewer/src.zip
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/MoleculeViewer/XYZApp.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 2 files for BUILD_DEMO_WireFrame
+Updating support/demos/image/applets/WireFrame/src.zip
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/applets/WireFrame/ThreeD.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 1 files for BUILD_DEMO_SwingApplet
+Updating support/demos/image/jfc/SwingApplet/src.zip
+Compiling 3 files for BUILD_DEMO_FileChooserDemo
+Updating support/demos/image/jfc/FileChooserDemo/src.zip
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/jfc/SwingApplet/SwingApplet.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+Compiling 4 files for BUILD_DEMO_Font2DTest
+Updating support/demos/image/jfc/Font2DTest/src.zip
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/jfc/FileChooserDemo/FileChooserDemo.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/jfc/FileChooserDemo/FileChooserDemo.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 15 files for BUILD_DEMO_Metalworks
+Updating support/demos/image/jfc/Metalworks/src.zip
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Compiling 2 files for BUILD_DEMO_Notepad
+Updating support/demos/image/jfc/Notepad/src.zip
+Compiling 5 files for BUILD_DEMO_SampleTree
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/jfc/Metalworks/MetalworksPrefs.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Updating support/demos/image/jfc/SampleTree/src.zip
+Compiling 8 files for BUILD_DEMO_TableExample
+Updating support/demos/image/jfc/TableExample/src.zip
+Compiling 1 files for BUILD_DEMO_TransparentRuler
+Updating support/demos/image/jfc/TransparentRuler/src.zip
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jdk/src/demo/share/jfc/TableExample/TableExample4.java使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+Creating support/classlist.jar
+Creating support/demos/image/jfc/CodePointIM/CodePointIM.jar
+Creating support/demos/image/applets/MoleculeViewer/MoleculeViewer.jar
+Creating support/demos/image/applets/WireFrame/WireFrame.jar
+Creating support/demos/image/jfc/SwingApplet/SwingApplet.jar
+Creating support/demos/image/jfc/FileChooserDemo/FileChooserDemo.jar
+Creating support/demos/image/jfc/Font2DTest/Font2DTest.jar
+Creating support/demos/image/jfc/Metalworks/Metalworks.jar
+Creating support/demos/image/jfc/Notepad/Notepad.jar
+Creating support/demos/image/jfc/SampleTree/SampleTree.jar
+Creating support/demos/image/jfc/TableExample/TableExample.jar
+Creating support/demos/image/jfc/TransparentRuler/TransparentRuler.jar
+Creating images/jmods/jdk.jlink.jmod
+Creating images/jmods/java.base.jmod
+Creating jre jimage
+Creating jdk jimage
+WARNING: Using incubator modules: jdk.incubator.httpclient
+WARNING: Using incubator modules: jdk.incubator.httpclient
+----- Build times -------
+Start 2018-02-25 02:00:24
+End   2018-02-25 02:15:15
+
+00:14:51 TOTAL
+-------------------------
+Finished building target 'all' in configuration 'macosx-x86_64-normal-serverANDclient-slowdebug'

@@ -1,0 +1,46 @@
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:13: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+        ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                       ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:43: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                      ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:458:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+  { 0, ((-1)<<1) + 1, ((-1)<<2) + 1, ((-1)<<3) + 1, ((-1)<<4) + 1,
+                                                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:40: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                   ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:459:55: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<5) + 1, ((-1)<<6) + 1, ((-1)<<7) + 1, ((-1)<<8) + 1,
+                                                  ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:25: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:460:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<9) + 1, ((-1)<<10) + 1, ((-1)<<11) + 1, ((-1)<<12) + 1,
+                                                    ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:10: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:26: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                     ~~~~^
+../jdk/src/java.desktop/share/native/libjavajpeg/jdhuff.c:461:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    ((-1)<<13) + 1, ((-1)<<14) + 1, ((-1)<<15) + 1 };
+                                     ~~~~^
+15 warnings generated.

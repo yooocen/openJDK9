@@ -1,0 +1,6 @@
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+注: /Users/chenyongda/YourOpenJDK/jaxws/src/jdk.xml.bind/share/classes/module-info.java 使用或覆盖了标记为待删除的已过时 API。
+注: 有关详细信息, 请使用 -Xlint:removal 重新编译。
+注: 某些输入文件使用了未经检查或不安全的操作。
+注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。

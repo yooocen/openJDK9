@@ -1,0 +1,3 @@
+../jdk/src/java.base/share/native/libfdlibm/k_cos.c :
+../jdk/src/java.base/share/native/libfdlibm/fdlibm.h :
+../jdk/src/java.base/share/native/libfdlibm/jfdlibm.h :

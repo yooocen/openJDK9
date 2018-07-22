@@ -1,0 +1,6 @@
+IMPLEMENTOR="N/A"
+JAVA_VERSION="9"
+MODULES="java.base java.datatransfer java.logging java.activation java.compiler java.xml java.prefs java.desktop java.security.sasl java.naming jdk.unsupported java.rmi java.transaction java.corba java.instrument java.management java.management.rmi java.scripting java.xml.bind java.xml.crypto java.security.jgss java.sql java.sql.rowset java.se jdk.httpserver java.xml.ws.annotation java.xml.ws java.se.ee java.smartcardio jdk.accessibility jdk.charsets jdk.crypto.ec jdk.crypto.cryptoki jdk.dynalink jdk.incubator.httpclient jdk.internal.le jdk.internal.vm.ci jdk.jdwp.agent jdk.jsobject jdk.localedata jdk.management.agent jdk.management jdk.naming.dns jdk.naming.rmi jdk.net jdk.pack jdk.scripting.nashorn jdk.scripting.nashorn.shell jdk.sctp jdk.security.auth jdk.security.jgss jdk.xml.dom jdk.zipfs"
+OS_ARCH="x86_64"
+OS_NAME="Darwin"
+SOURCE=".:a08cbfc0e4ec corba:5666eba44ac6 hotspot:b756e7a2ec33+ jaxp:364631d8ff2e jaxws:a1d64f45f9d5 jdk:65464a307408 langtools:65bfdabaab9c nashorn:17cc754c8936"

@@ -1,0 +1,15 @@
+digraph "java.xml.ws.annotation" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.xml.ws.annotation"}
+  subgraph se {
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.xml.ws.annotation" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  }
+  "java.xml.ws.annotation" -> "java.base" [color="#dddddd", weight=10];
+}

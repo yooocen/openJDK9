@@ -1,0 +1,15 @@
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM CodePointIM.class
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM java.awt.im.spi.InputMethodDescriptor
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint_zh_CN.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint_ja.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM README_zh_CN.html
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM META-INF/services/java.awt.im.spi.InputMethodDescriptor
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM README.html
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM com/sun/inputmethods/internal/codepointim/CodePointInputMethodDescriptor.class
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM com/sun/inputmethods/internal/codepointim/CodePointInputMethod.class
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM README_ja.html
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint_ja.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM resources/codepoint_zh_CN.properties
+-C /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/demos/classes/jfc/CodePointIM META-INF/services/java.awt.im.spi.InputMethodDescriptor

@@ -1,0 +1,1 @@
+BUILD_GTEST_LAUNCHER_VARDEPS_old:=/usr/bin/clang++ -iframework /System/Library/Frameworks -F /System/Library/Frameworks/JavaVM.framework/Frameworks -mmacosx-version-min=10.7.0 -L/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-client/libjvm/gtest -Wl,-rpath,@loader_path/. -ljvm

@@ -1,0 +1,28 @@
+In file included from ../src/share/vm/memory/metaspace.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:296:
+In file included from ../src/share/vm/gc/cms/compactibleFreeListSpace.hpp:33:
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metachunk, FreeList<Metachunk> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:293:44: note: in instantiation of member function 'TreeChunk<Metachunk, FreeList<Metachunk> >::min_size' requested here
+    return TreeChunk<Chunk_t, FreeList_t>::min_size();
+                                           ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:242:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::min_size' requested here
+  BinaryTreeDictionary() :
+  ^
+../src/share/vm/memory/metaspace.cpp:145:3: note: in instantiation of member function 'BinaryTreeDictionary<Metachunk, FreeList<Metachunk> >::BinaryTreeDictionary' requested here
+  ChunkManager(size_t specialized_size, size_t small_size, size_t medium_size)
+  ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<Metablock, FreeList<Metablock> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+../src/share/vm/memory/metaspace.cpp:342:94: note: in instantiation of member function 'TreeChunk<Metablock, FreeList<Metablock> >::min_size' requested here
+  static size_t min_dictionary_size()   { return TreeChunk<Metablock, FreeList<Metablock> >::min_size(); }
+                                                                                             ^
+../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+2 warnings generated.

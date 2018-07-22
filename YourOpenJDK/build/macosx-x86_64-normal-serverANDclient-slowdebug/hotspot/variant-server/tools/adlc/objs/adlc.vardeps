@@ -1,0 +1,1 @@
+BUILD_ADLC_VARDEPS_old:=/usr/bin/clang++ -iframework /System/Library/Frameworks -F /System/Library/Frameworks/JavaVM.framework/Frameworks /usr/bin/strip -S /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-server/tools/adlc/adlc

@@ -1,0 +1,7 @@
+../src/share/vm/logging/logConfiguration.cpp:302:16: warning: passing an object that undergoes default argument promotion to 'va_start' has undefined behavior [-Wvarargs]
+  va_start(ap, exact_match);
+               ^
+../src/share/vm/logging/logConfiguration.cpp:298:66: note: parameter of type 'bool' is declared here
+void LogConfiguration::configure_stdout(LogLevelType level, bool exact_match, ...) {
+                                                                 ^
+1 warning generated.

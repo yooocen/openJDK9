@@ -1,0 +1,10 @@
+../jdk/src/java.desktop/macosx/native/libsplashscreen/splashscreen_sys.m:397:5: warning: 'objc_registerThreadWithCollector' is deprecated: it does nothing. Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic. [-Wdeprecated-declarations]
+    objc_registerThreadWithCollector();
+    ^
+/usr/include/objc/objc-auto.h:242:1: note: 'objc_registerThreadWithCollector' has been explicitly marked deprecated here
+OBJC_GC_DEPRECATED("it does nothing")
+^
+/usr/include/objc/objc-auto.h:45:55: note: expanded from macro 'OBJC_GC_DEPRECATED'
+#   define OBJC_GC_DEPRECATED(message) __attribute__((deprecated(message ". Define OBJC_SILENCE_GC_DEPRECATIONS=1 to temporarily silence this diagnostic.")))
+                                                      ^
+1 warning generated.

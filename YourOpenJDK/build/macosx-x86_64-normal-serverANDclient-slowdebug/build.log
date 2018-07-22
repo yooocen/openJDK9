@@ -1,0 +1,8 @@
+Building target 'default (exploded-image)' in configuration 'macosx-x86_64-normal-serverANDclient-slowdebug'
+----- Build times -------
+Start 2018-07-22 11:36:32
+End   2018-07-22 11:36:43
+
+00:00:11 TOTAL
+-------------------------
+Finished building target 'default (exploded-image)' in configuration 'macosx-x86_64-normal-serverANDclient-slowdebug'

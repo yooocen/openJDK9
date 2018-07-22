@@ -1,0 +1,16 @@
+In file included from ../src/share/vm/gc/cms/compactibleFreeListSpace.cpp:1:
+In file included from ../src/share/vm/precompiled/precompiled.hpp:296:
+In file included from ../src/share/vm/gc/cms/compactibleFreeListSpace.hpp:33:
+/Users/chenyongda/YourOpenJDK/hotspot/make/../src/share/vm/memory/binaryTreeDictionary.hpp:167:12: warning: instantiation of variable 'TreeChunk<FreeChunk, AdaptiveFreeList<FreeChunk> >::_min_tree_chunk_size' required here, but no definition is available [-Wundefined-var-template]
+    return _min_tree_chunk_size;
+           ^
+/Users/chenyongda/YourOpenJDK/hotspot/make/../src/share/vm/memory/binaryTreeDictionary.hpp:293:44: note: in instantiation of member function 'TreeChunk<FreeChunk, AdaptiveFreeList<FreeChunk> >::min_size' requested here
+    return TreeChunk<Chunk_t, FreeList_t>::min_size();
+                                           ^
+../src/share/vm/gc/cms/compactibleFreeListSpace.cpp:2681:67: note: in instantiation of member function 'BinaryTreeDictionary<FreeChunk, AdaptiveFreeList<FreeChunk> >::min_size' requested here
+      fc = dictionary()->get_chunk(MAX2(n * word_sz, _dictionary->min_size()),
+                                                                  ^
+/Users/chenyongda/YourOpenJDK/hotspot/make/../src/share/vm/memory/binaryTreeDictionary.hpp:148:17: note: forward declaration of template entity is here
+  static size_t _min_tree_chunk_size;
+                ^
+1 warning generated.

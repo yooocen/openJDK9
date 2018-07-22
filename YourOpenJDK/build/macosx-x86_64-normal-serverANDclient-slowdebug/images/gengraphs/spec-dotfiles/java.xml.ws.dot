@@ -1,0 +1,26 @@
+digraph "java.xml.ws" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.xml"}
+  {rank=same "java.xml.ws"}
+  {rank=same "java.xml.bind"}
+  subgraph se {
+  "java.activation" [fontcolor="#e76f00", group=java];
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.datatransfer" [fontcolor="#e76f00", group=java];
+  "java.xml" [fontcolor="#e76f00", group=java];
+  "java.xml.bind" [fontcolor="#e76f00", group=java];
+  "java.xml.ws" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  }
+  "java.activation" -> "java.datatransfer" [weight=10];
+  "java.datatransfer" -> "java.base" [color="#dddddd", weight=10];
+  "java.xml" -> "java.base" [color="#dddddd", weight=10000];
+  "java.xml.bind" -> "java.activation" [weight=10];
+  "java.xml.bind" -> "java.xml" [weight=10];
+  "java.xml.ws" -> "java.xml.bind" [weight=10];
+}

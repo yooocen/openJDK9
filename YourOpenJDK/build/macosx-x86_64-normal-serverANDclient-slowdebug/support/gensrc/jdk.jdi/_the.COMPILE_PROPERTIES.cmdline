@@ -1,0 +1,12 @@
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jdi/share/classes/com/sun/tools/jdi/resources/jdi_zh_CN.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jdi/com/sun/tools/jdi/resources/jdi_zh_CN.java
+ListResourceBundle
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jdi/share/classes/com/sun/tools/jdi/resources/jdi_ja.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jdi/com/sun/tools/jdi/resources/jdi_ja.java
+ListResourceBundle
+-compile
+/Users/chenyongda/YourOpenJDK/jdk/src/jdk.jdi/share/classes/com/sun/tools/jdi/resources/jdi.properties
+/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/support/gensrc/jdk.jdi/com/sun/tools/jdi/resources/jdi.java
+ListResourceBundle

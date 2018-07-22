@@ -1,0 +1,1 @@
+BUILD_JDK_PLIST_VARDEPS_old:=/bin/cat /usr/bin/sed -e 's/@@ID@@/net.java.openjdk.9-internal.jdk/' -e 's/@@NAME@@/OpenJDK 9-internal/' -e 's/@@INFO@@/OpenJDK 9-internal+0-adhoc.chenyongda.YourOpenJDK/' -e 's/@@PLATFORM_VERSION@@/9.0/' -e 's/@@VERSION@@/9/' -e 's/@@VENDOR@@/UNDEFINED/'

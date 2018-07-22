@@ -1,0 +1,1490 @@
+<html><head>
+<title>JDK Module Summary</title>
+<link rel="stylesheet" type="text/css" href="/.fonts/dejavu.css"/>
+<style type="text/css">
+        HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
+        BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM,
+        IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, B, U,
+        I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE,
+        CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, ARTICLE, ASIDE, CANVAS, DETAILS,
+        EMBED, FIGURE, FIGCAPTION, FOOTER, HEADER, HGROUP, MENU, NAV, OUTPUT, RUBY,
+        SECTION, SUMMARY, TIME, MARK, AUDIO, VIDEO {
+          margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;
+          vertical-align: baseline; }
+        ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, 
+        FOOTER, HEADER, HGROUP, MENU, NAV, SECTION { display: block; }
+        BLOCKQUOTE, Q { quotes: none; }
+        BLOCKQUOTE:before, BLOCKQUOTE:after, Q:before, Q:after {
+                content: ''; content: none; }
+        TABLE { border-collapse: collapse; border-spacing: 0; }
+        A { text-decoration: none; }
+        A:link { color: #437291; }
+        A:visited { color: #666666; }
+        A.anchor:link, A.anchor:visited { color: black; }
+        A[href]:hover { color: #e76f00; }
+        A IMG { border-width: 0px; }
+        HTML { font-size: 20px; } /* baseline grid */
+        HTML > BODY { font-size: 14px; }
+        BODY {
+          background: white;
+          margin: 40px;
+          margin-bottom: 150%;
+          line-height: 20px;
+          -webkit-text-size-adjust: 100%; /* iOS */
+          color: #222;
+        }
+        BODY { font-family: "DejaVu Serif", "Lucida Bright", "Bookman Old Style",
+                            Georgia, serif; }
+        CODE, TT, .jref, DIV.spec .open, TABLE.profiles {
+          font-family: "DejaVu Sans", "Lucida Sans", Helvetica, sans-serif; }
+        PRE, .code { font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+                            Monaco, "Courier New", monospace; }
+        H1, H2, H3, H4 { color: green; font-weight: bold; }
+        I { font-style: italic; }
+        TH { font-weight: bold; }
+        P { text-indent: 40px; }
+        P:first-child, UL + P, OL + P, BLOCKQUOTE + P, TABLE + P, P.subsection,
+          P.break, DIV.profiles-table + P { text-indent: 0; }
+        P.break { margin-top: 10px; }
+        P.subsection { margin-top: 20px; }
+        P.subsection SPAN.title { font-weight: bold; padding-right: 20px; }
+        UL, OL { margin: 10px 0; padding-left: 40px; }
+        LI { margin-bottom: 10px; }
+        UL.compact LI { margin-bottom: 0; }
+        PRE { padding: 0; margin: 10px 0 10px 20px; background: #eee; width: 45em; }
+        BLOCKQUOTE { margin: 10px 0; margin-left: 20px; }
+        LI BLOCKQUOTE { margin-left: 0; }
+        UL LI { list-style-type: square; }
+        .todo { color: darkred; text-align: right; }
+        .error { color: red; font-weight: bold; }
+        .warn { color: #ee0000; font-weight: bold; }
+        DIV.doctitle { margin-top: -13px;
+          font-size: 22px; line-height: 40px; font-weight: bold; }
+        DIV.twarn { color: #cc0000; font-weight: bold; margin-bottom: 9px; }
+        DIV.subtitle { margin-top: 2px; font-size: 18px; font-weight: bold; }
+        DIV.authors { margin-top: 10px; margin-bottom: 10px; font-size: 16px; }
+        DIV.author A { font-style: italic; }
+        DIV.version { margin-top: 10px; font-size: 12px; }
+        DIV.version, DIV.legal-notice { font-size: 12px; line-height: 15px; }
+        SPAN.hash { font-size: 9px; }
+        DIV.version SPAN.modified { color: green; font-weight: bold; }
+        DIV.head { margin-bottom: 20px; }
+        DIV.section > DIV.title, DIV.section DIV.number SPAN {
+          font-size: 15px; font-weight: bold; }
+        TABLE { border-collapse: collapse; border: none; }
+        TD.number { text-align: right; }
+        TD, TH { text-align: left; white-space: nowrap; }
+        TD.name, SPAN.name { font-weight: bold; }
+        
+        TABLE.module { width: 100%; }
+        TABLE.module TD:first-child { padding-right: 10px; }
+        TR.module > TD { padding: 10px 0; border-top: 1px solid black; }
+        TR > TH { padding-bottom: 10px; }
+        TR.br TD { padding-top: 20px; }
+        TABLE.modules { margin-top: 20px; }
+        TABLE.modules > TBODY > TR > TD:nth-child(even) { background: #eee; }
+        TABLE.modules > TBODY > TR > TD, TABLE.modules > TBODY > TR > TH {
+          padding-left: 10px; padding-right: 10px; }
+        .reexp, .def { font-weight: bold; }
+        .agg { font-style: italic; }
+        SUP { height: 0; line-height: 1; position: relative;
+              vertical-align: baseline; bottom: 1ex; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="doctitle">JDK Module Summary</div>
+<div class="versions">周日 2月 25 02:14:26 CST 2018</div>
+<div class="section">Total modules: 73<br>
+Total size: 203,833,849 bytes (Mac OS X x86_64)</div>
+<table class="modules">
+<tr>  <th>Module</th>
+  <th>Requires</th>
+  <th>Exports</th>
+  <th>Services</th>
+  <th>Commands/Native Libraries/Configs</th>
+</tr>
+<tr id="java.activation" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.activation</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">39 classes</td><td class="number">104,843</td></tr><tr><td class="br">2 resources</td><td class="number">873</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes<sup>1</sup></td><td class="number">126,512</td></tr><tr><td class="br">Total bytes of dependencies<sup>2</sup></td><td class="number">65,359,779</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">24,163,849</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td colspan="2"><span class="br"><i><sup>1</sup>sum of all files including debug files</i></span></td></tr><tr><td colspan="2"><span class="br"><i><sup>2</sup>sum of direct and indirect dependencies</i></span></td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.datatransfer">java.datatransfer</a><sup>*</sup>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i><br><br><i>* bold denotes requires transitive</i></td>
+  <td class="code">javax.activation<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.base" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.base</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">5671 classes</td><td class="number">21,248,988</td></tr><tr><td class="br">18 resources</td><td class="number">562,318</td></tr><tr><td class="br">9 configs</td><td class="number">48,477</td></tr><tr><td class="br">2 commands</td><td class="number">236,896</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">64,986,356</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">0</td></tr><tr><td class="br">Total jmod bytes (1 file)</td><td class="number">23,910,874</td></tr></table></td>
+<td></td>
+  <td class="code">java.io<br>
+java.lang<br>
+java.lang.annotation<br>
+java.lang.invoke<br>
+java.lang.module<br>
+java.lang.ref<br>
+java.lang.reflect<br>
+java.math<br>
+java.net<br>
+java.net.spi<br>
+java.nio<br>
+java.nio.channels<br>
+java.nio.channels.spi<br>
+java.nio.charset<br>
+java.nio.charset.spi<br>
+java.nio.file<br>
+java.nio.file.attribute<br>
+java.nio.file.spi<br>
+java.security<br>
+java.security.acl<br>
+java.security.cert<br>
+java.security.interfaces<br>
+java.security.spec<br>
+java.text<br>
+java.text.spi<br>
+java.time<br>
+java.time.chrono<br>
+java.time.format<br>
+java.time.temporal<br>
+java.time.zone<br>
+java.util<br>
+java.util.concurrent<br>
+java.util.concurrent.atomic<br>
+java.util.concurrent.locks<br>
+java.util.function<br>
+java.util.jar<br>
+java.util.regex<br>
+java.util.spi<br>
+java.util.stream<br>
+java.util.zip<br>
+javax.crypto<br>
+javax.crypto.interfaces<br>
+javax.crypto.spec<br>
+javax.net<br>
+javax.net.ssl<br>
+javax.security.auth<br>
+javax.security.auth.callback<br>
+javax.security.auth.login<br>
+javax.security.auth.spi<br>
+javax.security.auth.x500<br>
+javax.security.cert<br>
+</td>
+  <td class="code">uses java.lang.System$LoggerFinder<br>
+uses java.net.ContentHandlerFactory<br>
+uses java.net.spi.URLStreamHandlerProvider<br>
+uses java.nio.channels.spi.AsynchronousChannelProvider<br>
+uses java.nio.channels.spi.SelectorProvider<br>
+uses java.nio.charset.spi.CharsetProvider<br>
+uses java.nio.file.spi.FileSystemProvider<br>
+uses java.nio.file.spi.FileTypeDetector<br>
+uses java.security.Provider<br>
+uses java.text.spi.BreakIteratorProvider<br>
+uses java.text.spi.CollatorProvider<br>
+uses java.text.spi.DateFormatProvider<br>
+uses java.text.spi.DateFormatSymbolsProvider<br>
+uses java.text.spi.DecimalFormatSymbolsProvider<br>
+uses java.text.spi.NumberFormatProvider<br>
+uses java.time.chrono.AbstractChronology<br>
+uses java.time.chrono.Chronology<br>
+uses java.time.zone.ZoneRulesProvider<br>
+uses java.util.spi.CalendarDataProvider<br>
+uses java.util.spi.CalendarNameProvider<br>
+uses java.util.spi.CurrencyNameProvider<br>
+uses java.util.spi.LocaleNameProvider<br>
+uses java.util.spi.ResourceBundleControlProvider<br>
+uses java.util.spi.ResourceBundleProvider<br>
+uses java.util.spi.TimeZoneNameProvider<br>
+uses java.util.spi.ToolProvider<br>
+uses javax.security.auth.spi.LoginModule<br>
+uses jdk.internal.logger.DefaultLoggerFinder<br>
+uses sun.security.ssl.ClientKeyExchangeService<br>
+uses sun.text.spi.JavaTimeDateTimePatternProvider<br>
+uses sun.util.locale.provider.LocaleDataMetaInfo<br>
+uses sun.util.resources.LocaleData$CommonResourceBundleProvider<br>
+uses sun.util.resources.LocaleData$SupplementaryResourceBundleProvider<br>
+uses sun.util.spi.CalendarProvider<br>
+provides java.nio.file.spi.FileSystemProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.internal.jrtfs.JrtFileSystemProvider]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">java</td><td class="number">118,448</td></tr><tr><td class="code">keytool</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td colspan="2"><span class="code">conf/</span></td></tr><tr><td class="code">README.txt</td><td class="number">1,490</td></tr><tr><td class="code">default_US_export.policy</td><td class="number">146</td></tr><tr><td class="code">default_local.policy</td><td class="number">647</td></tr><tr><td class="code">exempt_local.policy</td><td class="number">566</td></tr><tr><td class="code">java.policy</td><td class="number">2,180</td></tr><tr><td class="code">java.security</td><td class="number">38,645</td></tr><tr><td class="code">net.properties</td><td class="number">4,464</td></tr></table></td>
+</td>
+</tr>
+<tr id="java.compiler" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.compiler</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">137 classes</td><td class="number">201,486</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">222,282</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,028,888</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.annotation.processing<br>
+javax.lang.model<br>
+javax.lang.model.element<br>
+javax.lang.model.type<br>
+javax.lang.model.util<br>
+javax.tools<br>
+</td>
+  <td class="code">uses javax.tools.DocumentationTool<br>
+uses javax.tools.JavaCompiler<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.corba" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.corba</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1831 classes</td><td class="number">5,365,379</td></tr><tr><td class="br">20 resources</td><td class="number">211,505</td></tr><tr><td class="br">4 commands</td><td class="number">473,792</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">6,092,538</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">109,148,064</td></tr><tr><td class="br">Total jmod bytes (12 files)</td><td class="number">47,128,019</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code" href="#java.naming">java.naming</a>
+<br><a class="code reexp" href="#java.rmi">java.rmi</a>
+<br><a class="code" href="#java.transaction">java.transaction</a>
+<br><a class="code" href="#jdk.unsupported">jdk.unsupported</a>
+<br><br><i>+4 transitive dependencies</i></td>
+  <td class="code">javax.activity<br>
+javax.rmi<br>
+javax.rmi.CORBA<br>
+org.omg.CORBA<br>
+org.omg.CORBA.DynAnyPackage<br>
+org.omg.CORBA.ORBPackage<br>
+org.omg.CORBA.TypeCodePackage<br>
+org.omg.CORBA.portable<br>
+org.omg.CORBA_2_3<br>
+org.omg.CORBA_2_3.portable<br>
+org.omg.CosNaming<br>
+org.omg.CosNaming.NamingContextExtPackage<br>
+org.omg.CosNaming.NamingContextPackage<br>
+org.omg.Dynamic<br>
+org.omg.DynamicAny<br>
+org.omg.DynamicAny.DynAnyFactoryPackage<br>
+org.omg.DynamicAny.DynAnyPackage<br>
+org.omg.IOP<br>
+org.omg.IOP.CodecFactoryPackage<br>
+org.omg.IOP.CodecPackage<br>
+org.omg.Messaging<br>
+org.omg.PortableInterceptor<br>
+org.omg.PortableInterceptor.ORBInitInfoPackage<br>
+org.omg.PortableServer<br>
+org.omg.PortableServer.CurrentPackage<br>
+org.omg.PortableServer.POAManagerPackage<br>
+org.omg.PortableServer.POAPackage<br>
+org.omg.PortableServer.ServantLocatorPackage<br>
+org.omg.PortableServer.portable<br>
+org.omg.SendingContext<br>
+org.omg.stub.java.rmi<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">idlj</td><td class="number">118,448</td></tr><tr><td class="code">orbd</td><td class="number">118,448</td></tr><tr><td class="code">servertool</td><td class="number">118,448</td></tr><tr><td class="code">tnameserv</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="java.datatransfer" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.datatransfer</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">27 classes</td><td class="number">94,379</td></tr><tr><td class="br">1 resource</td><td class="number">4,057</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">119,232</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,969,449</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.awt.datatransfer<br>
+</td>
+  <td class="code">uses sun.datatransfer.DesktopDatatransferService<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.desktop" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.desktop</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">6133 classes</td><td class="number">21,835,815</td></tr><tr><td class="br">279 resources</td><td class="number">520,175</td></tr><tr><td class="br">1 config</td><td class="number">1,210</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">29,873,840</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">76,867,272</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">43,096,512</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.datatransfer">java.datatransfer</a>
+<br><a class="code" href="#java.prefs">java.prefs</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.applet<br>
+java.awt<br>
+java.awt.color<br>
+java.awt.desktop<br>
+java.awt.dnd<br>
+java.awt.event<br>
+java.awt.font<br>
+java.awt.geom<br>
+java.awt.im<br>
+java.awt.im.spi<br>
+java.awt.image<br>
+java.awt.image.renderable<br>
+java.awt.print<br>
+java.beans<br>
+java.beans.beancontext<br>
+javax.accessibility<br>
+javax.imageio<br>
+javax.imageio.event<br>
+javax.imageio.metadata<br>
+javax.imageio.plugins.bmp<br>
+javax.imageio.plugins.jpeg<br>
+javax.imageio.plugins.tiff<br>
+javax.imageio.spi<br>
+javax.imageio.stream<br>
+javax.print<br>
+javax.print.attribute<br>
+javax.print.attribute.standard<br>
+javax.print.event<br>
+javax.sound.midi<br>
+javax.sound.midi.spi<br>
+javax.sound.sampled<br>
+javax.sound.sampled.spi<br>
+javax.swing<br>
+javax.swing.border<br>
+javax.swing.colorchooser<br>
+javax.swing.event<br>
+javax.swing.filechooser<br>
+javax.swing.plaf<br>
+javax.swing.plaf.basic<br>
+javax.swing.plaf.metal<br>
+javax.swing.plaf.multi<br>
+javax.swing.plaf.nimbus<br>
+javax.swing.plaf.synth<br>
+javax.swing.table<br>
+javax.swing.text<br>
+javax.swing.text.html<br>
+javax.swing.text.html.parser<br>
+javax.swing.text.rtf<br>
+javax.swing.tree<br>
+javax.swing.undo<br>
+</td>
+  <td class="code">uses java.awt.im.spi.InputMethodDescriptor<br>
+uses javax.accessibility.AccessibilityProvider<br>
+uses javax.imageio.spi.ImageInputStreamSpi<br>
+uses javax.imageio.spi.ImageOutputStreamSpi<br>
+uses javax.imageio.spi.ImageReaderSpi<br>
+uses javax.imageio.spi.ImageTranscoderSpi<br>
+uses javax.imageio.spi.ImageWriterSpi<br>
+uses javax.print.PrintServiceLookup<br>
+uses javax.print.StreamPrintServiceFactory<br>
+uses javax.sound.midi.spi.MidiDeviceProvider<br>
+uses javax.sound.midi.spi.MidiFileReader<br>
+uses javax.sound.midi.spi.MidiFileWriter<br>
+uses javax.sound.midi.spi.SoundbankReader<br>
+uses javax.sound.sampled.spi.AudioFileReader<br>
+uses javax.sound.sampled.spi.AudioFileWriter<br>
+uses javax.sound.sampled.spi.FormatConversionProvider<br>
+uses javax.sound.sampled.spi.MixerProvider<br>
+provides java.net.ContentHandlerFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.awt.www.content.MultimediaContentHandlers]<br>
+provides javax.print.PrintServiceLookup<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.print.PrintServiceLookupProvider]<br>
+provides javax.print.StreamPrintServiceFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.print.PSStreamPrinterFactory]<br>
+provides javax.sound.midi.spi.MidiDeviceProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.MidiInDeviceProvider, com.sun.media.sound.MidiOutDeviceProvider, com.sun.media.sound.RealTimeSequencerProvider, com.sun.media.sound.SoftProvider]<br>
+provides javax.sound.midi.spi.MidiFileReader<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.StandardMidiFileReader]<br>
+provides javax.sound.midi.spi.MidiFileWriter<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.StandardMidiFileWriter]<br>
+provides javax.sound.midi.spi.SoundbankReader<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.AudioFileSoundbankReader, com.sun.media.sound.DLSSoundbankReader, com.sun.media.sound.JARSoundbankReader, com.sun.media.sound.SF2SoundbankReader]<br>
+provides javax.sound.sampled.spi.AudioFileReader<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.AiffFileReader, com.sun.media.sound.AuFileReader, com.sun.media.sound.SoftMidiAudioFileReader, com.sun.media.sound.WaveFileReader, com.sun.media.sound.WaveFloatFileReader, com.sun.media.sound.WaveExtensibleFileReader]<br>
+provides javax.sound.sampled.spi.AudioFileWriter<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.AiffFileWriter, com.sun.media.sound.AuFileWriter, com.sun.media.sound.WaveFileWriter, com.sun.media.sound.WaveFloatFileWriter]<br>
+provides javax.sound.sampled.spi.FormatConversionProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.AlawCodec, com.sun.media.sound.AudioFloatFormatConverter, com.sun.media.sound.PCMtoPCMCodec, com.sun.media.sound.UlawCodec]<br>
+provides javax.sound.sampled.spi.MixerProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.media.sound.DirectAudioDeviceProvider, com.sun.media.sound.PortMixerProvider]<br>
+provides sun.datatransfer.DesktopDatatransferService<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.awt.datatransfer.DesktopDatatransferServiceImpl]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">appletviewer</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td colspan="2"><span class="code">conf/</span></td></tr><tr><td class="code">sound.properties</td><td class="number">1,210</td></tr></table></td>
+</td>
+</tr>
+<tr id="java.instrument" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.instrument</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">11 classes</td><td class="number">28,782</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">216,818</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,996,633</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.lang.instrument<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.logging" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.logging</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">69 classes</td><td class="number">230,664</td></tr><tr><td class="br">1 config</td><td class="number">2,731</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">254,191</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,037,567</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.util.logging<br>
+</td>
+  <td class="code">provides jdk.internal.logger.DefaultLoggerFinder<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.util.logging.internal.LoggingProviderImpl]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">conf/</span></td></tr><tr><td class="code">logging.properties</td><td class="number">2,731</td></tr></table></td>
+</td>
+</tr>
+<tr id="java.management" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.management</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">486 classes</td><td class="number">1,769,643</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,814,275</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,797,105</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.lang.management<br>
+javax.management<br>
+javax.management.loading<br>
+javax.management.modelmbean<br>
+javax.management.monitor<br>
+javax.management.openmbean<br>
+javax.management.relation<br>
+javax.management.remote<br>
+javax.management.timer<br>
+</td>
+  <td class="code">uses javax.management.remote.JMXConnectorProvider<br>
+uses javax.management.remote.JMXConnectorServerProvider<br>
+uses sun.management.spi.PlatformMBeanProvider<br>
+provides javax.security.auth.spi.LoginModule<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.jmx.remote.security.FileLoginModule]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.management.rmi" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.management.rmi</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">38 classes</td><td class="number">206,092</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">226,888</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">69,128,013</td></tr><tr><td class="br">Total jmod bytes (7 files)</td><td class="number">26,034,736</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.management">java.management</a>
+<br><a class="code" href="#java.naming">java.naming</a>
+<br><a class="code reexp" href="#java.rmi">java.rmi</a>
+<br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code">javax.management.remote.rmi<br>
+</td>
+  <td class="code">provides javax.management.remote.JMXConnectorProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.jmx.remote.protocol.rmi.ClientProvider]<br>
+provides javax.management.remote.JMXConnectorServerProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.jmx.remote.protocol.rmi.ServerProvider]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.naming" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.naming</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">242 classes</td><td class="number">912,115</td></tr><tr><td class="br">1 resource</td><td class="number">275</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">933,186</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,412,080</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">24,575,056</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.security.sasl">java.security.sasl</a>
+<br><br><br><br><br><br><i>+1 transitive dependencies</i></td>
+  <td class="code">javax.naming<br>
+javax.naming.directory<br>
+javax.naming.event<br>
+javax.naming.ldap<br>
+javax.naming.spi<br>
+</td>
+  <td class="code">uses javax.naming.ldap.StartTlsResponse<br>
+uses javax.naming.spi.InitialContextFactory<br>
+provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.provider.certpath.ldap.JdkLDAP]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.prefs" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.prefs</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">48 classes</td><td class="number">126,201</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">172,937</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">76,575,103</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">29,155,499</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.xml">java.xml</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.util.prefs<br>
+</td>
+  <td class="code">uses java.util.prefs.PreferencesFactory<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.rmi" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.rmi</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">238 classes</td><td class="number">666,445</td></tr><tr><td class="br">24 resources</td><td class="number">35,799</td></tr><tr><td class="br">2 commands</td><td class="number">236,896</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">968,472</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,240,547</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,513,758</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.rmi<br>
+java.rmi.activation<br>
+java.rmi.dgc<br>
+java.rmi.registry<br>
+java.rmi.server<br>
+javax.rmi.ssl<br>
+</td>
+  <td class="code">uses java.rmi.server.RMIClassLoaderSpi<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">rmid</td><td class="number">118,448</td></tr><tr><td class="code">rmiregistry</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="java.scripting" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.scripting</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">19 classes</td><td class="number">47,712</td></tr><tr><td class="br">2 resources</td><td class="number">25,705</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">212,661</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,996,827</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.script<br>
+</td>
+  <td class="code">uses javax.script.ScriptEngineFactory<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jrunscript</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="java.se" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def agg">java.se</span>&nbsp;&nbsp;(aggregator<sup>*</sup>)</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1 class</td><td class="number">653</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">21,449</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">115,132,930</td></tr><tr><td class="br">Total jmod bytes (19 files)</td><td class="number">47,112,218</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td colspan="2"><span class="br"><i>* aggregator is a module with module-info.class only</i></span></td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.compiler">java.compiler</a>
+<br><a class="code reexp" href="#java.datatransfer">java.datatransfer</a>
+<br><a class="code reexp" href="#java.desktop">java.desktop</a>
+<br><a class="code reexp" href="#java.instrument">java.instrument</a>
+<br><a class="code reexp" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.management">java.management</a>
+<br><a class="code reexp" href="#java.management.rmi">java.management.rmi</a>
+<br><a class="code reexp" href="#java.naming">java.naming</a>
+<br><a class="code reexp" href="#java.prefs">java.prefs</a>
+<br><a class="code reexp" href="#java.rmi">java.rmi</a>
+<br><a class="code reexp" href="#java.scripting">java.scripting</a>
+<br><a class="code reexp" href="#java.security.jgss">java.security.jgss</a>
+<br><a class="code reexp" href="#java.security.sasl">java.security.sasl</a>
+<br><a class="code reexp" href="#java.sql">java.sql</a>
+<br><a class="code reexp" href="#java.sql.rowset">java.sql.rowset</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><a class="code reexp" href="#java.xml.crypto">java.xml.crypto</a>
+<br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.se.ee" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def agg">java.se.ee</span>&nbsp;&nbsp;(aggregator)</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1 class</td><td class="number">507</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">21,303</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">131,795,782</td></tr><tr><td class="br">Total jmod bytes (28 files)</td><td class="number">54,970,009</td></tr></table></td>
+<td><a class="code reexp" href="#java.activation">java.activation</a>
+<br><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.corba">java.corba</a>
+<br><a class="code reexp" href="#java.se">java.se</a>
+<br><a class="code reexp" href="#java.transaction">java.transaction</a>
+<br><a class="code reexp" href="#java.xml.bind">java.xml.bind</a>
+<br><a class="code reexp" href="#java.xml.ws">java.xml.ws</a>
+<br><a class="code reexp" href="#java.xml.ws.annotation">java.xml.ws.annotation</a>
+<br><br><i>+19 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.security.jgss" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.security.jgss</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">259 classes</td><td class="number">1,108,532</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,215,308</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">66,345,266</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">25,176,959</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.naming">java.naming</a>
+<br><br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code">javax.security.auth.kerberos<br>
+org.ietf.jgss<br>
+</td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.jgss.SunProvider]<br>
+provides sun.security.ssl.ClientKeyExchangeService<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.krb5.internal.ssl.Krb5KeyExchangeService]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.security.sasl" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.security.sasl</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">36 classes</td><td class="number">150,737</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">171,533</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,240,547</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,124,583</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.security.sasl<br>
+</td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.security.sasl.Provider]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.smartcardio" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.smartcardio</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">32 classes</td><td class="number">79,927</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">121,881</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,971,271</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.smartcardio<br>
+</td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.smartcardio.SunPCSC]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.sql" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.sql</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">82 classes</td><td class="number">149,853</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">170,649</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">76,829,294</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">29,282,476</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">java.sql<br>
+javax.sql<br>
+javax.transaction.xa<br>
+</td>
+  <td class="code">uses java.sql.Driver<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.sql.rowset" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.sql.rowset</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">60 classes</td><td class="number">431,697</td></tr><tr><td class="br">13 resources</td><td class="number">112,736</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">565,229</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">78,104,662</td></tr><tr><td class="br">Total jmod bytes (7 files)</td><td class="number">30,038,636</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.naming">java.naming</a>
+<br><a class="code reexp" href="#java.sql">java.sql</a>
+<br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code">javax.sql.rowset<br>
+javax.sql.rowset.serial<br>
+javax.sql.rowset.spi<br>
+</td>
+  <td class="code">uses javax.sql.rowset.RowSetFactory<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.transaction" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.transaction</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">4 classes</td><td class="number">2,063</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">22,859</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">66,209,019</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">24,524,051</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.rmi">java.rmi</a>
+<br><br><br><br><br><i>+1 transitive dependencies</i></td>
+  <td class="code">javax.transaction<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.xml" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.xml</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">2264 classes</td><td class="number">10,266,414</td></tr><tr><td class="br">129 resources</td><td class="number">1,250,766</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">11,588,747</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">29,071,357</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.xml<br>
+javax.xml.catalog<br>
+javax.xml.datatype<br>
+javax.xml.namespace<br>
+javax.xml.parsers<br>
+javax.xml.stream<br>
+javax.xml.stream.events<br>
+javax.xml.stream.util<br>
+javax.xml.transform<br>
+javax.xml.transform.dom<br>
+javax.xml.transform.sax<br>
+javax.xml.transform.stax<br>
+javax.xml.transform.stream<br>
+javax.xml.validation<br>
+javax.xml.xpath<br>
+org.w3c.dom<br>
+org.w3c.dom.bootstrap<br>
+org.w3c.dom.events<br>
+org.w3c.dom.ls<br>
+org.w3c.dom.ranges<br>
+org.w3c.dom.traversal<br>
+org.w3c.dom.views<br>
+org.xml.sax<br>
+org.xml.sax.ext<br>
+org.xml.sax.helpers<br>
+</td>
+  <td class="code">uses javax.xml.datatype.DatatypeFactory<br>
+uses javax.xml.parsers.DocumentBuilderFactory<br>
+uses javax.xml.parsers.SAXParserFactory<br>
+uses javax.xml.stream.XMLEventFactory<br>
+uses javax.xml.stream.XMLInputFactory<br>
+uses javax.xml.stream.XMLOutputFactory<br>
+uses javax.xml.transform.TransformerFactory<br>
+uses javax.xml.validation.SchemaFactory<br>
+uses javax.xml.xpath.XPathFactory<br>
+uses org.xml.sax.XMLReader<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.xml.bind" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.xml.bind</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1050 classes</td><td class="number">3,126,975</td></tr><tr><td class="br">124 resources</td><td class="number">182,447</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">3,330,218</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">107,400,808</td></tr><tr><td class="br">Total jmod bytes (10 files)</td><td class="number">45,061,310</td></tr></table></td>
+<td><a class="code reexp" href="#java.activation">java.activation</a>
+<br><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><a class="code" href="#jdk.unsupported">jdk.unsupported</a>
+<br><br><i>+2 transitive dependencies</i></td>
+  <td class="code">javax.xml.bind<br>
+javax.xml.bind.annotation<br>
+javax.xml.bind.annotation.adapters<br>
+javax.xml.bind.attachment<br>
+javax.xml.bind.helpers<br>
+javax.xml.bind.util<br>
+</td>
+  <td class="code">uses javax.xml.bind.JAXBContextFactory<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.xml.crypto" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.xml.crypto</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">394 classes</td><td class="number">1,336,246</td></tr><tr><td class="br">4 resources</td><td class="number">51,848</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,420,326</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">76,829,294</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">29,886,435</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.xml.crypto<br>
+javax.xml.crypto.dom<br>
+javax.xml.crypto.dsig<br>
+javax.xml.crypto.dsig.dom<br>
+javax.xml.crypto.dsig.keyinfo<br>
+javax.xml.crypto.dsig.spec<br>
+</td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [org.jcp.xml.dsig.internal.dom.XMLDSigRI]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.xml.ws" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.xml.ws</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1876 classes</td><td class="number">5,905,044</td></tr><tr><td class="br">278 resources</td><td class="number">859,026</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">6,784,866</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">112,773,000</td></tr><tr><td class="br">Total jmod bytes (14 files)</td><td class="number">49,209,608</td></tr></table></td>
+<td><a class="code reexp" href="#java.activation">java.activation</a>
+<br><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code" href="#java.management">java.management</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><a class="code reexp" href="#java.xml.bind">java.xml.bind</a>
+<br><a class="code" href="#java.xml.ws.annotation">java.xml.ws.annotation</a>
+<br><a class="code" href="#jdk.httpserver">jdk.httpserver</a>
+<br><a class="code" href="#jdk.unsupported">jdk.unsupported</a>
+<br><br><i>+3 transitive dependencies</i></td>
+  <td class="code">javax.jws<br>
+javax.jws.soap<br>
+javax.xml.soap<br>
+javax.xml.ws<br>
+javax.xml.ws.handler<br>
+javax.xml.ws.handler.soap<br>
+javax.xml.ws.http<br>
+javax.xml.ws.soap<br>
+javax.xml.ws.spi<br>
+javax.xml.ws.spi.http<br>
+javax.xml.ws.wsaddressing<br>
+</td>
+  <td class="code">uses javax.xml.soap.MessageFactory<br>
+uses javax.xml.soap.SAAJMetaFactory<br>
+uses javax.xml.soap.SOAPConnectionFactory<br>
+uses javax.xml.soap.SOAPFactory<br>
+uses javax.xml.ws.spi.Provider<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="java.xml.ws.annotation" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">java.xml.ws.annotation</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">7 classes</td><td class="number">4,529</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">25,325</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,922,783</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">javax.annotation<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.accessibility" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.accessibility</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">24 classes</td><td class="number">109,340</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">130,136</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">106,741,112</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">43,152,978</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.desktop">java.desktop</a>
+<br><br><br><br><br><i>+3 transitive dependencies</i></td>
+  <td class="code">com.sun.java.accessibility.util<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.attach" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.attach</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">15 classes</td><td class="number">40,168</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">75,840</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,185,479</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,041,153</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#jdk.internal.jvmstat">jdk.internal.jvmstat</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.tools.attach<br>
+com.sun.tools.attach.spi<br>
+</td>
+  <td class="code">uses com.sun.tools.attach.spi.AttachProvider<br>
+provides com.sun.tools.attach.spi.AttachProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.tools.attach.AttachProviderImpl]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.charsets" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.charsets</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">198 classes</td><td class="number">3,058,897</td></tr><tr><td class="br">1 resource</td><td class="number">26,566</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">3,106,259</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">25,754,473</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides java.nio.charset.spi.CharsetProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.nio.cs.ext.ExtendedCharsets]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.compiler" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.compiler</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1587 classes</td><td class="number">7,490,197</td></tr><tr><td class="br">4 resources</td><td class="number">1,322</td></tr><tr><td class="br">3 commands</td><td class="number">355,344</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">12,471,510</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,208,638</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">30,674,796</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.compiler">java.compiler</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.source.doctree<br>
+com.sun.source.tree<br>
+com.sun.source.util<br>
+com.sun.tools.javac<br>
+</td>
+  <td class="code">uses com.sun.source.util.Plugin<br>
+uses com.sun.tools.javac.platform.PlatformProvider<br>
+uses javax.annotation.processing.Processor<br>
+provides com.sun.tools.javac.platform.PlatformProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.javac.platform.JDKPlatformProvider]<br>
+provides java.util.spi.ToolProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.javac.main.JavacToolProvider]<br>
+provides javax.tools.JavaCompiler<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.javac.api.JavacTool]<br>
+provides javax.tools.Tool<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.javac.api.JavacTool]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">javac</td><td class="number">118,448</td></tr><tr><td class="code">javah</td><td class="number">118,448</td></tr><tr><td class="code">serialver</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.crypto.cryptoki" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.crypto.cryptoki</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">116 classes</td><td class="number">552,417</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">680,201</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,331,916</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,349,797</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#jdk.crypto.ec">jdk.crypto.ec</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.pkcs11.SunPKCS11]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.crypto.ec" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.crypto.ec</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">24 classes</td><td class="number">53,676</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">345,560</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,036,299</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.security.ec.SunEC]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.dynalink" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.dynalink</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">105 classes</td><td class="number">326,820</td></tr><tr><td class="br">1 resource</td><td class="number">676</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">349,821</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,240,547</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,204,892</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">jdk.dynalink<br>
+jdk.dynalink.beans<br>
+jdk.dynalink.linker<br>
+jdk.dynalink.linker.support<br>
+jdk.dynalink.support<br>
+</td>
+  <td class="code">uses jdk.dynalink.linker.GuardingDynamicLinkerExporter<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.editpad" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.editpad</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">4 classes</td><td class="number">9,359</td></tr><tr><td class="br">1 resource</td><td class="number">1,275</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">31,430</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">106,770,714</td></tr><tr><td class="br">Total jmod bytes (7 files)</td><td class="number">43,123,340</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#jdk.internal.ed">jdk.internal.ed</a>
+<br><br><br><br><br><i>+3 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides jdk.internal.editor.spi.BuildInEditorProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.editpad.EditPadProvider]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.hotspot.agent" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.hotspot.agent</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1726 classes</td><td class="number">4,215,533</td></tr><tr><td class="br">38 resources</td><td class="number">41,895</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">4,455,228</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">108,176,436</td></tr><tr><td class="br">Total jmod bytes (9 files)</td><td class="number">46,120,695</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.datatransfer">java.datatransfer</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.rmi">java.rmi</a>
+<br><a class="code" href="#java.scripting">java.scripting</a>
+<br><br><br><br><i>+3 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jhsdb</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.httpserver" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.httpserver</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">70 classes</td><td class="number">181,578</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">202,374</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,017,090</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.net.httpserver<br>
+com.sun.net.httpserver.spi<br>
+</td>
+  <td class="code">uses com.sun.net.httpserver.spi.HttpServerProvider<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.incubator.httpclient" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.incubator.httpclient</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">225 classes</td><td class="number">840,395</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">861,191</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,326,537</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">jdk.incubator.http<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.internal.ed" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.internal.ed</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">3 classes</td><td class="number">8,806</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">29,602</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,923,601</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.internal.jvmstat" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.internal.jvmstat</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">68 classes</td><td class="number">146,054</td></tr><tr><td class="br">1 resource</td><td class="number">32,273</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">199,123</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,006,451</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses sun.jvmstat.monitor.MonitoredHostService<br>
+provides sun.jvmstat.monitor.MonitoredHostService<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.jvmstat.perfdata.monitor.protocol.file.MonitoredHostFileService, sun.jvmstat.perfdata.monitor.protocol.local.MonitoredHostLocalService]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.internal.le" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.internal.le</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">69 classes</td><td class="number">238,704</td></tr><tr><td class="br">1 resource</td><td class="number">391</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">261,430</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,049,946</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.internal.opt" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.internal.opt</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">49 classes</td><td class="number">131,067</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">152,983</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,985,857</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.internal.vm.ci" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.internal.vm.ci</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">267 classes</td><td class="number">756,930</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">777,726</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,315,258</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses jdk.vm.ci.hotspot.HotSpotJVMCIBackendFactory<br>
+uses jdk.vm.ci.services.JVMCIServiceLocator<br>
+provides jdk.vm.ci.hotspot.HotSpotJVMCIBackendFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.vm.ci.hotspot.aarch64.AArch64HotSpotJVMCIBackendFactory, jdk.vm.ci.hotspot.amd64.AMD64HotSpotJVMCIBackendFactory, jdk.vm.ci.hotspot.sparc.SPARCHotSpotJVMCIBackendFactory]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.jartool" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jartool</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">73 classes</td><td class="number">502,351</td></tr><tr><td class="br">2 commands</td><td class="number">236,896</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">760,043</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,237,062</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.jarsigner<br>
+jdk.security.jarsigner<br>
+</td>
+  <td class="code">provides java.util.spi.ToolProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.tools.jar.JarToolProvider]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jar</td><td class="number">118,448</td></tr><tr><td class="code">jarsigner</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.javadoc" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.javadoc</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">778 classes</td><td class="number">3,961,055</td></tr><tr><td class="br">66 resources</td><td class="number">2,298,208</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">6,404,664</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">89,268,895</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">38,287,781</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.xml">java.xml</a>
+<br><a class="code reexp" href="#jdk.compiler">jdk.compiler</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.javadoc<br>
+com.sun.tools.doclets<br>
+com.sun.tools.doclets.standard<br>
+com.sun.tools.javadoc<br>
+jdk.javadoc.doclet<br>
+</td>
+  <td class="code">provides java.util.spi.ToolProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.javadoc.internal.tool.JavadocToolProvider]<br>
+provides javax.tools.DocumentationTool<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.javadoc.internal.api.JavadocTool]<br>
+provides javax.tools.Tool<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.javadoc.internal.api.JavadocTool]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">javadoc</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jcmd" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jcmd</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">49 classes</td><td class="number">141,978</td></tr><tr><td class="br">2 resources</td><td class="number">29,725</td></tr><tr><td class="br">6 commands</td><td class="number">710,688</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">903,187</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,261,319</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">24,400,689</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#jdk.attach">jdk.attach</a>
+<br><a class="code" href="#jdk.internal.jvmstat">jdk.internal.jvmstat</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jcmd</td><td class="number">118,448</td></tr><tr><td class="code">jinfo</td><td class="number">118,448</td></tr><tr><td class="code">jmap</td><td class="number">118,448</td></tr><tr><td class="code">jps</td><td class="number">118,448</td></tr><tr><td class="code">jstack</td><td class="number">118,448</td></tr><tr><td class="code">jstat</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jconsole" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jconsole</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">220 classes</td><td class="number">770,054</td></tr><tr><td class="br">15 resources</td><td class="number">80,875</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">990,173</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">111,750,387</td></tr><tr><td class="br">Total jmod bytes (16 files)</td><td class="number">46,024,220</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.desktop">java.desktop</a>
+<br><a class="code reexp" href="#java.management">java.management</a>
+<br><a class="code" href="#java.management.rmi">java.management.rmi</a>
+<br><a class="code" href="#java.rmi">java.rmi</a>
+<br><a class="code" href="#jdk.attach">jdk.attach</a>
+<br><a class="code" href="#jdk.internal.jvmstat">jdk.internal.jvmstat</a>
+<br><a class="code" href="#jdk.management">jdk.management</a>
+<br><a class="code" href="#jdk.management.agent">jdk.management.agent</a>
+<br><br><i>+6 transitive dependencies</i></td>
+  <td class="code">com.sun.tools.jconsole<br>
+</td>
+  <td class="code">uses com.sun.tools.jconsole.JConsolePlugin<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jconsole</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jdeps" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jdeps</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">408 classes</td><td class="number">1,454,837</td></tr><tr><td class="br">1 resource</td><td class="number">32,342</td></tr><tr><td class="br">3 commands</td><td class="number">355,344</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,863,319</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">77,680,148</td></tr><tr><td class="br">Total jmod bytes (4 files)</td><td class="number">31,489,783</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#jdk.compiler">jdk.compiler</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides java.util.spi.ToolProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.javap.Main$JavapToolProvider, com.sun.tools.jdeps.Main$JDepsToolProvider]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">javap</td><td class="number">118,448</td></tr><tr><td class="code">jdeprscan</td><td class="number">118,448</td></tr><tr><td class="code">jdeps</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jdi" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jdi</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">549 classes</td><td class="number">1,608,835</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,748,079</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,663,591</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">25,063,339</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#jdk.attach">jdk.attach</a>
+<br><a class="code" href="#jdk.jdwp.agent">jdk.jdwp.agent</a>
+<br><br><br><br><br><i>+1 transitive dependencies</i></td>
+  <td class="code">com.sun.jdi<br>
+com.sun.jdi.connect<br>
+com.sun.jdi.connect.spi<br>
+com.sun.jdi.event<br>
+com.sun.jdi.request<br>
+</td>
+  <td class="code">uses com.sun.jdi.connect.Connector<br>
+uses com.sun.jdi.connect.spi.TransportService<br>
+provides com.sun.jdi.connect.Connector<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.jdi.ProcessAttachingConnector, com.sun.tools.jdi.RawCommandLineLauncher, com.sun.tools.jdi.SocketAttachingConnector, com.sun.tools.jdi.SocketListeningConnector, com.sun.tools.jdi.SunCommandLineLauncher]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jdb</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jdwp.agent" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def agg">jdk.jdwp.agent</span>&nbsp;&nbsp;(aggregator)</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1 class</td><td class="number">228</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">402,272</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,059,966</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.jlink" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jlink</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">176 classes</td><td class="number">782,328</td></tr><tr><td class="br">1 resource</td><td class="number">7,316</td></tr><tr><td class="br">3 commands</td><td class="number">355,344</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,165,784</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">79,696,450</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">32,072,925</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#jdk.internal.opt">jdk.internal.opt</a>
+<br><a class="code" href="#jdk.jdeps">jdk.jdeps</a>
+<br><br><br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses jdk.tools.jlink.plugin.Plugin<br>
+provides java.util.spi.ToolProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.tools.jmod.Main$JmodToolProvider, jdk.tools.jlink.internal.Main$JlinkToolProvider]<br>
+provides jdk.tools.jlink.plugin.Plugin<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.tools.jlink.internal.plugins.StripDebugPlugin, jdk.tools.jlink.internal.plugins.ExcludePlugin, jdk.tools.jlink.internal.plugins.ExcludeFilesPlugin, jdk.tools.jlink.internal.plugins.ExcludeJmodSectionPlugin, jdk.tools.jlink.internal.plugins.LegalNoticeFilePlugin, jdk.tools.jlink.internal.plugins.SystemModulesPlugin, jdk.tools.jlink.internal.plugins.StripNativeCommandsPlugin, jdk.tools.jlink.internal.plugins.OrderResourcesPlugin, jdk.tools.jlink.internal.plugins.DefaultCompressPlugin, jdk.tools.jlink.internal.plugins.ExcludeVMPlugin, jdk.tools.jlink.internal.plugins.IncludeLocalesPlugin, jdk.tools.jlink.internal.plugins.GenerateJLIClassesPlugin, jdk.tools.jlink.internal.plugins.ReleaseInfoPlugin, jdk.tools.jlink.internal.plugins.ClassForNamePlugin]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jimage</td><td class="number">118,448</td></tr><tr><td class="code">jlink</td><td class="number">118,448</td></tr><tr><td class="code">jmod</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jshell" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jshell</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">268 classes</td><td class="number">1,173,945</td></tr><tr><td class="br">10 resources</td><td class="number">217,563</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,530,752</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">92,565,352</td></tr><tr><td class="br">Total jmod bytes (14 files)</td><td class="number">38,058,015</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.prefs">java.prefs</a>
+<br><a class="code" href="#jdk.compiler">jdk.compiler</a>
+<br><a class="code" href="#jdk.internal.ed">jdk.internal.ed</a>
+<br><a class="code" href="#jdk.internal.le">jdk.internal.le</a>
+<br><a class="code" href="#jdk.internal.opt">jdk.internal.opt</a>
+<br><a class="code reexp" href="#jdk.jdi">jdk.jdi</a>
+<br><br><i>+4 transitive dependencies</i></td>
+  <td class="code">jdk.jshell<br>
+jdk.jshell.execution<br>
+jdk.jshell.spi<br>
+jdk.jshell.tool<br>
+</td>
+  <td class="code">uses jdk.internal.editor.spi.BuildInEditorProvider<br>
+uses jdk.jshell.spi.ExecutionControlProvider<br>
+provides javax.tools.Tool<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.internal.jshell.tool.JShellToolProvider]<br>
+provides jdk.jshell.spi.ExecutionControlProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.jshell.execution.JdiExecutionControlProvider, jdk.jshell.execution.LocalExecutionControlProvider, jdk.jshell.execution.FailOverExecutionControlProvider]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jshell</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.jsobject" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jsobject</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">6 classes</td><td class="number">4,984</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">25,780</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">106,741,112</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">43,108,457</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><br><br><br><br><i>+3 transitive dependencies</i></td>
+  <td class="code">netscape.javascript<br>
+</td>
+  <td class="code">uses jdk.internal.netscape.javascript.spi.JSObjectProvider<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.jstatd" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.jstatd</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">16 classes</td><td class="number">42,102</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">181,346</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">66,408,142</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">24,685,076</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.rmi">java.rmi</a>
+<br><a class="code" href="#jdk.internal.jvmstat">jdk.internal.jvmstat</a>
+<br><br><br><br><br><i>+1 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides sun.jvmstat.monitor.MonitoredHostService<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.jvmstat.perfdata.monitor.protocol.rmi.MonitoredHostRmiService]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jstatd</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.localedata" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.localedata</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">2102 classes</td><td class="number">16,314,783</td></tr><tr><td class="br">3 resources</td><td class="number">345,572</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">16,684,480</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">32,002,538</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides sun.util.locale.provider.LocaleDataMetaInfo<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.util.resources.cldr.provider.CLDRLocaleDataMetaInfo, sun.util.resources.provider.NonBaseLocaleDataMetaInfo]<br>
+provides sun.util.resources.LocaleData$CommonResourceBundleProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.util.resources.provider.LocaleDataProvider]<br>
+provides sun.util.resources.LocaleData$SupplementaryResourceBundleProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [sun.util.resources.provider.SupplementaryLocaleDataProvider]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.management" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.management</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">36 classes</td><td class="number">101,653</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">154,601</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">66,800,631</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">24,865,525</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.management">java.management</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.management<br>
+</td>
+  <td class="code">provides sun.management.spi.PlatformMBeanProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.management.internal.PlatformMBeanProviderImpl]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.management.agent" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.management.agent</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">48 classes</td><td class="number">160,043</td></tr><tr><td class="br">3 configs</td><td class="number">21,487</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">211,166</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">69,354,901</td></tr><tr><td class="br">Total jmod bytes (8 files)</td><td class="number">26,130,212</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.management">java.management</a>
+<br><a class="code" href="#java.management.rmi">java.management.rmi</a>
+<br><br><br><br><br><i>+4 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses jdk.internal.agent.spi.AgentProvider<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">conf/</span></td></tr><tr><td class="code">jmxremote.access</td><td class="number">3,997</td></tr><tr><td class="code">jmxremote.password.template</td><td class="number">2,856</td></tr><tr><td class="code">management.properties</td><td class="number">14,634</td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.naming.dns" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.naming.dns</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">22 classes</td><td class="number">98,274</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">119,070</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">66,345,266</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">24,634,885</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.naming">java.naming</a>
+<br><br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides javax.naming.spi.InitialContextFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.jndi.dns.DnsContextFactory]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.naming.rmi" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.naming.rmi</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">11 classes</td><td class="number">32,828</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">53,624</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">67,313,738</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">25,076,529</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.naming">java.naming</a>
+<br><a class="code" href="#java.rmi">java.rmi</a>
+<br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides javax.naming.spi.InitialContextFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.jndi.rmi.registry.RegistryContextFactory]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.net" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.net</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">10 classes</td><td class="number">24,301</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">45,097</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,931,715</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">jdk.net<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.pack" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.pack</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1 class</td><td class="number">222</td></tr><tr><td class="br">2 commands</td><td class="number">322,928</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">547,262</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,118,927</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">pack200</td><td class="number">118,448</td></tr><tr><td class="code">unpack200</td><td class="number">204,480</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.policytool" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.policytool</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">80 classes</td><td class="number">247,097</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">386,341</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">111,404,845</td></tr><tr><td class="br">Total jmod bytes (14 files)</td><td class="number">45,572,564</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code" href="#java.management">java.management</a>
+<br><a class="code" href="#java.security.jgss">java.security.jgss</a>
+<br><a class="code" href="#java.sql">java.sql</a>
+<br><a class="code" href="#jdk.net">jdk.net</a>
+<br><a class="code" href="#jdk.security.jgss">jdk.security.jgss</a>
+<br><br><i>+5 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">policytool</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.rmic" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.rmic</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">252 classes</td><td class="number">1,341,931</td></tr><tr><td class="br">6 resources</td><td class="number">160,724</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">1,641,899</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">134,339,058</td></tr><tr><td class="br">Total jmod bytes (16 files)</td><td class="number">57,092,087</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.corba">java.corba</a>
+<br><a class="code" href="#jdk.compiler">jdk.compiler</a>
+<br><a class="code" href="#jdk.javadoc">jdk.javadoc</a>
+<br><br><br><br><br><i>+11 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">rmic</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.scripting.nashorn" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.scripting.nashorn</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1148 classes</td><td class="number">4,667,940</td></tr><tr><td class="br">17 resources</td><td class="number">84,019</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">4,775,486</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">65,803,029</td></tr><tr><td class="br">Total jmod bytes (5 files)</td><td class="number">26,515,657</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.scripting">java.scripting</a>
+<br><a class="code" href="#jdk.dynalink">jdk.dynalink</a>
+<br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">jdk.nashorn.api.scripting<br>
+jdk.nashorn.api.tree<br>
+</td>
+  <td class="code">provides javax.script.ScriptEngineFactory<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.nashorn.api.scripting.NashornScriptEngineFactory]<br>
+provides jdk.dynalink.linker.GuardingDynamicLinkerExporter<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.nashorn.api.linker.NashornLinkerExporter]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.scripting.nashorn.shell" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.scripting.nashorn.shell</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">18 classes</td><td class="number">88,369</td></tr><tr><td class="br">1 command</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">227,613</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">112,816,983</td></tr><tr><td class="br">Total jmod bytes (12 files)</td><td class="number">46,053,958</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#jdk.internal.le">jdk.internal.le</a>
+<br><a class="code" href="#jdk.scripting.nashorn">jdk.scripting.nashorn</a>
+<br><br><br><i>+6 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code"></td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">jjs</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.sctp" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.sctp</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">27 classes</td><td class="number">40,312</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">61,108</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,940,778</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.nio.sctp<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.security.auth" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.security.auth</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">33 classes</td><td class="number">129,752</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">159,432</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">67,560,574</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">25,256,771</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.naming">java.naming</a>
+<br><a class="code" href="#java.security.jgss">java.security.jgss</a>
+<br><br><br><br><i>+2 transitive dependencies</i></td>
+  <td class="code">com.sun.security.auth<br>
+com.sun.security.auth.callback<br>
+com.sun.security.auth.login<br>
+com.sun.security.auth.module<br>
+</td>
+  <td class="code">provides javax.security.auth.spi.LoginModule<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.security.auth.module.Krb5LoginModule, com.sun.security.auth.module.UnixLoginModule, com.sun.security.auth.module.JndiLoginModule, com.sun.security.auth.module.KeyStoreLoginModule, com.sun.security.auth.module.LdapLoginModule, com.sun.security.auth.module.NTLoginModule]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.security.jgss" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.security.jgss</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">17 classes</td><td class="number">38,698</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">59,494</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">67,560,574</td></tr><tr><td class="br">Total jmod bytes (6 files)</td><td class="number">25,207,555</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code reexp" href="#java.security.jgss">java.security.jgss</a>
+<br><a class="code" href="#java.security.sasl">java.security.sasl</a>
+<br><br><br><i>+1 transitive dependencies</i></td>
+  <td class="code">com.sun.security.jgss<br>
+</td>
+  <td class="code">provides java.security.Provider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.security.sasl.gsskerb.JdkSASL]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.unsupported" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.unsupported</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">13 classes</td><td class="number">35,915</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">56,711</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">23,935,066</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">com.sun.nio.file<br>
+sun.misc<br>
+sun.reflect<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.xml.bind" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.xml.bind</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">1215 classes</td><td class="number">3,807,450</td></tr><tr><td class="br">160 resources</td><td class="number">362,288</td></tr><tr><td class="br">2 commands</td><td class="number">236,896</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">4,444,388</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">123,202,536</td></tr><tr><td class="br">Total jmod bytes (12 files)</td><td class="number">53,740,202</td></tr></table></td>
+<td><a class="code" href="#java.activation">java.activation</a>
+<br><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.desktop">java.desktop</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code" href="#java.xml">java.xml</a>
+<br><a class="code" href="#java.xml.bind">java.xml.bind</a>
+<br><a class="code" href="#jdk.compiler">jdk.compiler</a>
+<br><br><i>+3 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses com.sun.tools.internal.xjc.Plugin<br>
+provides com.sun.tools.internal.xjc.Plugin<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.internal.xjc.addon.accessors.PluginImpl, com.sun.tools.internal.xjc.addon.at_generated.PluginImpl, com.sun.tools.internal.xjc.addon.code_injector.PluginImpl, com.sun.tools.internal.xjc.addon.episode.PluginImpl, com.sun.tools.internal.xjc.addon.locator.SourceLocationAddOn, com.sun.tools.internal.xjc.addon.sync.SynchronizedMethodAddOn]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">schemagen</td><td class="number">118,448</td></tr><tr><td class="code">xjc</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.xml.dom" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.xml.dom</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">90 classes</td><td class="number">45,374</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">66,170</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">76,575,103</td></tr><tr><td class="br">Total jmod bytes (3 files)</td><td class="number">29,120,337</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code reexp" href="#java.xml">java.xml</a>
+<br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code">org.w3c.dom.css<br>
+org.w3c.dom.html<br>
+org.w3c.dom.stylesheets<br>
+org.w3c.dom.xpath<br>
+</td>
+  <td class="code"></td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+<tr id="jdk.xml.ws" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.xml.ws</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">304 classes</td><td class="number">1,248,783</td></tr><tr><td class="br">103 resources</td><td class="number">654,601</td></tr><tr><td class="br">2 commands</td><td class="number">236,896</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">2,161,076</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">137,442,236</td></tr><tr><td class="br">Total jmod bytes (18 files)</td><td class="number">59,194,388</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><a class="code" href="#java.compiler">java.compiler</a>
+<br><a class="code" href="#java.logging">java.logging</a>
+<br><a class="code" href="#java.rmi">java.rmi</a>
+<br><a class="code" href="#java.xml">java.xml</a>
+<br><a class="code" href="#java.xml.bind">java.xml.bind</a>
+<br><a class="code" href="#java.xml.ws">java.xml.ws</a>
+<br><a class="code" href="#jdk.xml.bind">jdk.xml.bind</a>
+<br><br><i>+9 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">uses com.sun.tools.internal.ws.wscompile.Plugin<br>
+provides com.sun.tools.internal.ws.wscompile.Plugin<br>&nbsp;&nbsp;&nbsp;&nbsp;with [com.sun.tools.internal.ws.wscompile.plugin.at_generated.PluginImpl]<br>
+</td>
+<td><table class="module">
+<tr><td colspan="2"><span class="code">bin/</span></td></tr><tr><td class="code">wsgen</td><td class="number">118,448</td></tr><tr><td class="code">wsimport</td><td class="number">118,448</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr></table></td>
+</td>
+</tr>
+<tr id="jdk.zipfs" class="module">
+  <td><table class="module">
+<tr><td colspan="2"><span class="code name def">jdk.zipfs</span></td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">34 classes</td><td class="number">172,341</td></tr><tr><td colspan="2"><span class="br">&nbsp;</span></td></tr><tr><td class="br">Total bytes</td><td class="number">193,137</td></tr><tr><td class="br">Total bytes of dependencies</td><td class="number">64,986,356</td></tr><tr><td class="br">Total jmod bytes (2 files)</td><td class="number">24,005,417</td></tr></table></td>
+<td><a class="code" href="#java.base">java.base</a>
+<br><br><br><br><br><br><i>+0 transitive dependencies</i></td>
+  <td class="code"></td>
+  <td class="code">provides java.nio.file.spi.FileSystemProvider<br>&nbsp;&nbsp;&nbsp;&nbsp;with [jdk.nio.zipfs.ZipFileSystemProvider]<br>
+</td>
+<td><table class="module">
+</table></td>
+</td>
+</tr>
+</table></body></html>

@@ -1,0 +1,28 @@
+../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libawt_lwawt/CoreTextSupport.o: \
+  ../jdk/src/java.desktop/macosx/native/libawt_lwawt/font/CoreTextSupport.m \
+  ../jdk/src/java.desktop/macosx/native/libawt_lwawt/font/CoreTextSupport.h \
+  ../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/modules_include/java.base/jni.h \
+  ../jdk/src/java.base/macosx/native/include/jni_md.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JavaRuntimeSupport.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSDefines.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSProperties.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSLocalization.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSAccessibility.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSCursor.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSEvent.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSDrag.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSInputMethodController.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSWindow.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSMenu.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSFont.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSAppKitAWT.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSSymbolicator.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSUIControl.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSUIProperties.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSUIHitTesting.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSUIScrollBars.h \
+  /System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Headers/JRSSecurity.h \
+  ../jdk/src/java.desktop/macosx/native/libawt_lwawt/font/AWTFont.h \
+  ../jdk/src/java.desktop/share/native/common/font/fontscalerdefs.h \
+  ../jdk/src/java.desktop/share/native/common/font/AccelGlyphCache.h \
+  ../jdk/src/java.desktop/share/native/common/font/sunfontids.h

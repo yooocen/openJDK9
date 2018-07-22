@@ -1,0 +1,1 @@
+JRE_COMPACT2_MODULES_LIST_old:=java.logging,java.scripting,jdk.localedata,jdk.crypto.cryptoki,jdk.crypto.ec,jdk.unsupported,java.rmi,java.sql,java.xml,jdk.xml.dom,jdk.httpserver

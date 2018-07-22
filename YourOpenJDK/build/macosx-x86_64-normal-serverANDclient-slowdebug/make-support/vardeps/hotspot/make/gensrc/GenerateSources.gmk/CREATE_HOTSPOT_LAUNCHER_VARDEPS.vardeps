@@ -1,0 +1,1 @@
+CREATE_HOTSPOT_LAUNCHER_VARDEPS_old:=/bin/cat /usr/bin/sed -e 's|@@LIBARCH@@|amd64|' -e 's|@@JDK_IMPORT_PATH@@|/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/jdk|' -e 's|DUMMY_REPLACEMENT|DUMMY_REPLACEMENT|'

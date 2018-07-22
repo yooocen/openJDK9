@@ -1,0 +1,7 @@
+../jdk/src/java.desktop/macosx/native/libosxapp/NSApplicationAWT.m:335:48: warning: conflicting parameter types in implementation of 'nextEventMatchingMask:untilDate:inMode:dequeue:': 'NSEventMask' (aka 'enum NSEventMask') vs 'NSUInteger' (aka 'unsigned long') [-Wmismatched-parameter-types]
+- (NSEvent *)nextEventMatchingMask:(NSUInteger)mask untilDate:(NSDate *)expiration inMode:(NSString *)mode dequeue:(BOOL)deqFlag {
+                                    ~~~~~~~~~~ ^
+/System/Library/Frameworks/AppKit.framework/Headers/NSApplication.h:282:58: note: previous definition is here
+- (nullable NSEvent *)nextEventMatchingMask:(NSEventMask)mask untilDate:(nullable NSDate *)expiration inMode:(NSRunLoopMode)mode dequeue:(BOOL)deqFlag;
+                                             ~~~~~~~~~~~ ^
+1 warning generated.

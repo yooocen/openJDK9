@@ -1,0 +1,1 @@
+BUILD_JVMTI_TOOLS_VARDEPS_old:=/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/javac -g /Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-client/tools/jvmti jvmtiGen.java jvmtiEnvFill.java

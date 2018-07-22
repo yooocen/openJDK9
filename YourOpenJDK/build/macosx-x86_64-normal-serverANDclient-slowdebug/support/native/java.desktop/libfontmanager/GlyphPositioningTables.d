@@ -1,0 +1,20 @@
+../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libfontmanager/GlyphPositioningTables.o: \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPositioningTables.cpp \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETypes.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEStandalone.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEFontInstance.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/OpenTypeTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETableReference.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/Lookups.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ClassDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPositioningTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphLookupTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPosnLookupProc.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ICUFeatures.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphIterator.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LookupProcessor.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/CursiveAttachmentSubtables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEGlyphStorage.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEInsertionList.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPositionAdjustments.h

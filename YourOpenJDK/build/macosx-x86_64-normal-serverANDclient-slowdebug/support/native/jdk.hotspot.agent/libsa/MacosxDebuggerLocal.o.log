@@ -1,0 +1,16 @@
+../hotspot/src/jdk.hotspot.agent/macosx/native/libsaproc/MacosxDebuggerLocal.m:692:21: warning: 'ePtAttachDeprecated' is deprecated: PT_ATTACH is deprecated. See PT_ATTACHEXC [-Wdeprecated-declarations]
+  if ((res = ptrace(PT_ATTACH, pid, 0, 0)) < 0) {
+                    ^
+/usr/include/sys/ptrace.h:85:19: note: expanded from macro 'PT_ATTACH'
+#define PT_ATTACH       ePtAttachDeprecated     /* trace some running process */
+                        ^
+/usr/include/sys/ptrace.h:71:22: note: 'ePtAttachDeprecated' has been explicitly marked deprecated here
+        ePtAttachDeprecated __deprecated_enum_msg("PT_ATTACH is deprecated. See PT_ATTACHEXC") = 10
+                            ^
+/usr/include/sys/cdefs.h:186:38: note: expanded from macro '__deprecated_enum_msg'
+        #define __deprecated_enum_msg(_msg) __deprecated_msg(_msg)
+                                            ^
+/usr/include/sys/cdefs.h:180:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((deprecated(_msg)))
+                                                      ^
+1 warning generated.

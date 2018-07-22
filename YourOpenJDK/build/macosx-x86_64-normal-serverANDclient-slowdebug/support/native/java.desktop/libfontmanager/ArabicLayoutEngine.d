@@ -1,0 +1,25 @@
+../build/macosx-x86_64-normal-serverANDclient-slowdebug/support/native/java.desktop/libfontmanager/ArabicLayoutEngine.o: \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ArabicLayoutEngine.cpp \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETypes.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEStandalone.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEScripts.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEGlyphFilter.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEGlyphStorage.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEInsertionList.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LayoutEngine.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/OpenTypeLayoutEngine.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LEFontInstance.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/LETableReference.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphSubstitutionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/OpenTypeTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/Lookups.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphLookupTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ClassDefinitionTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GlyphPositioningTables.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ArabicLayoutEngine.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ScriptAndLanguageTags.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/CharSubstitutionFilter.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/GDEFMarkFilter.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/ArabicShaping.h \
+  ../jdk/src/java.desktop/share/native/libfontmanager/layout/CanonShaping.h

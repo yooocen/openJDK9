@@ -1,0 +1,39 @@
+digraph "java.xml.bind" {
+  nodesep=.5;
+  ranksep=0.600000;
+  pencolor=transparent;
+  node [shape=plaintext, fontcolor="#000000", fontname="DejaVuSans", fontsize=12, margin=".2,.2"];
+  edge [penwidth=2, color="#999999", arrowhead=open, arrowsize=1];
+  {rank=same "java.logging","java.xml"}
+  {rank=same "java.compiler"}
+  {rank=same "java.desktop"}
+  {rank=same "java.xml.bind"}
+  subgraph se {
+  "java.activation" [fontcolor="#e76f00", group=java];
+  "java.base" [fontcolor="#e76f00", group=java];
+  "java.compiler" [fontcolor="#e76f00", group=java];
+  "java.datatransfer" [fontcolor="#e76f00", group=java];
+  "java.desktop" [fontcolor="#e76f00", group=java];
+  "java.logging" [fontcolor="#e76f00", group=java];
+  "java.prefs" [fontcolor="#e76f00", group=java];
+  "java.xml" [fontcolor="#e76f00", group=java];
+  "java.xml.bind" [fontcolor="#e76f00", group=java];
+  }
+  subgraph jdk {
+  "jdk.unsupported" [fontcolor="#437291", group=jdk];
+  }
+  "java.activation" -> "java.logging" [style="dashed", weight=10];
+  "java.activation" -> "java.datatransfer" [weight=10];
+  "java.compiler" -> "java.base" [color="#dddddd", weight=10];
+  "java.datatransfer" -> "java.base" [color="#dddddd", weight=10];
+  "java.desktop" -> "java.prefs" [style="dashed", weight=10];
+  "java.desktop" -> "java.datatransfer" [weight=10];
+  "java.logging" -> "java.base" [color="#dddddd", weight=10];
+  "java.prefs" -> "java.xml" [style="dashed", weight=10];
+  "java.xml" -> "java.base" [color="#dddddd", weight=10000];
+  "java.xml.bind" -> "java.desktop" [style="dashed", weight=10];
+  "java.xml.bind" -> "java.compiler" [style="dashed", weight=10];
+  "java.xml.bind" -> "java.activation" [weight=10];
+  "java.xml.bind" -> "jdk.unsupported" [style="dashed"];
+  "jdk.unsupported" -> "java.base" [color="#dddddd"];
+}

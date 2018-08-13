@@ -86,6 +86,10 @@ case "$1" in
         MODE=gdb
         shift
         ;;
+    -lldb)
+        MODE=lldb
+        shift
+        ;;
     -gud)
         MODE=gud
         shift
@@ -106,7 +110,8 @@ esac
 if [ "${ALT_JAVA_HOME}" != "" ]; then
     JDK=${ALT_JAVA_HOME%%/jre}
 else
-    JDK=/Users/chenyongda/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/jdk
+    #这个需要根据具体的位置来，我当时编译的位置就是这个位置
+    JDK=/Users/chenyongda/Desktop/openjdk/openJDK9/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/jdk
 fi
 
 if [ "${JDK}" != "" ]; then
@@ -196,6 +201,9 @@ case "$MODE" in
 	init_gdb
         $GDB -x $GDBSCR --args $LAUNCHER $JPARMS "$@" $JAVA_ARGS
 	rm -f $GDBSCR
+        ;;
+    lldb)
+        lldb -- $LAUNCHER $JPARMS "$@" $JAVA_ARGS  #核心语句，在这里执行
         ;;
     gud)
 	init_gdb

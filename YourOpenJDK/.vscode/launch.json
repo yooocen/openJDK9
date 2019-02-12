@@ -1,0 +1,21 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/Users/chenyongda/Desktop/openjdk/openJDK9/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/jdk/bin/java",
+            "args": ["-XXaltjvm=/Users/chenyongda/Desktop/openjdk/openJDK9/YourOpenJDK/build/macosx-x86_64-normal-serverANDclient-slowdebug/hotspot/variant-server/libjvm","-Dsun.java.launcher.is_altjvm=true","-cp",".","Hello"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        }
+    ]
+}
